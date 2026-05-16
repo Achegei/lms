@@ -171,46 +171,4 @@ class CertificateController extends Controller
         return response()->download($outputPath, "{$course->title}_certificate.png");
     }
 
-    public function showVerifyForm(Request $request)
-    {
-        $certificate = null;
-
-        if ($request->certificate) {
-            $certificate = Certificate::where('certificate_number', $request->certificate)->first();
-        }
-
-        return view('verify_certificate', compact('certificate'));
-    }
-
-    public function verify(Request $request)
-    {
-        $request->validate([
-            'certificate_number' => 'required|string',
-        ]);
-
-        $certificate = Certificate::where('certificate_number', $request->certificate_number)->first();
-
-        if ($certificate) {
-            return back()->with('message', 'Valid certificate! Awardee: ' . $certificate->full_name);
-        }
-
-        return back()->with('message', 'Invalid certificate number.');
-    }
-
-    public function verifyQr($certificateNumber)
-    {
-        $certificate = Certificate::where('certificate_number', $certificateNumber)->first();
-
-        if (!$certificate) {
-            return view('verify_certificate_result', [
-                'valid' => false,
-                'certificate' => null,
-            ]);
-        }
-
-        return view('verify_certificate_result', [
-            'valid' => true,
-            'certificate' => $certificate,
-        ]);
-    }
 }

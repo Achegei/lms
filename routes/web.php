@@ -41,10 +41,7 @@ Route::get('/', function () {
 Route::get('/social-proof', function () {
 });
 
-Route::get('/verify-certificate', [CertificateController::class, 'showVerifyForm'])->name('certificate.verify');
-Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify.post');
-// QR code link route
-Route::get('/verify/{certificate}', [CertificateController::class, 'verifyQr'])->name('certificate.verify.qr');
+Route::get('/saccos', [PageController::class, 'saccos'])->name('saccos.page');
 
 Route::get('/partners', [PageController::class, 'partners'])->name('partners.page');
 Route::post('/partner/apply', [PartnerApplicationController::class, 'store'])->name('partner.apply');
@@ -67,14 +64,14 @@ Route::post('/certificate/download/{courseId}',
 //================================================
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'home')->name('home');
-    Route::get('/about', 'about')->name('about');
-    Route::get('/services', 'services')->name('services');
+    Route::get('/cryptocurrency', 'crypto')->name('crypto');
+    Route::get('/copywriting', 'copywriting')->name('copywriting');
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/contactus', 'contact')->name('contactus'); // Alias for the contact page
     Route::post('/contact', 'contactSubmit')->name('contact.submit');
     Route::get('/terms', 'terms')->name('terms');
     Route::get('/privacy-policy', 'policy')->name('policy');
-    Route::get('/pricing', 'pricing')->name('pricing');
+    Route::get('/e-commerce', 'ecommerce')->name('ecommerce');
     Route::get('/documentation', 'documentation')->name('documentation');
     Route::get('/introduction', 'introduction')->name('introduction');
     Route::get('/technology-stack', 'technology')->name('technology');
@@ -86,11 +83,14 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/rag-pipeline', 'rag')->name('rag');
     Route::get('/faceless-shorts', 'shorts')->name('shorts');
     Route::get('/faqs', 'faqs')->name('faqs');
+    Route::get('/investments', 'investments')->name('investments');
+    Route::get('/marketing', 'marketing')->name('marketing');
+    Route::get('/pricing', 'pricing')->name('pricing');
 });
 
 Route::prefix('careers')->group(function () {
     // Careers listing
-    Route::get('/', [CareerController::class, 'index'])->name('careers');
+    Route::get('/', [CareerController::class, ''])->name('');
     Route::post('/submit', [CareerApplicationController::class, 'store'])->name('careers.submit');
 
     // Apply form must come before the dynamic job description

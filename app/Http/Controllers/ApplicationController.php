@@ -17,6 +17,6 @@ class ApplicationController extends Controller
         // Get the position from the query parameter if it exists
         $position = $request->query('position', 'General Application');
 
-        return view('pages.application', ['position' => $position]);
+    
     }
 }

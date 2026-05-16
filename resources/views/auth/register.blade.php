@@ -14,13 +14,13 @@
             <img
                 src="{{ asset('images/logo.png') }}"
                 class="h-14 mb-8"
-                alt="Next Level Africa Club"
+                alt="Next Level Africa Academy"
             >
 
             <h1 class="text-5xl font-extrabold text-white leading-tight mb-6">
                 Join The
                 <span class="text-cyan-400">
-                    Next Level Africa Club
+                    Next Level Africa Academy
                 </span>
             </h1>
 
@@ -99,7 +99,7 @@
                         <img
                             src="{{ asset('images/logo.png') }}"
                             class="h-12"
-                            alt="Next Level Africa Club"
+                            alt="Next Level Africa Academy"
                         >
                     </div>
 

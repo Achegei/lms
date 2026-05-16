@@ -1,37 +1,34 @@
 @extends('layouts.public')
 
-@section('title', 'Wealth with SACCOs | Next Level Africa Club')
+@section('title', 'E-commerce Campus | Next Level Africa Academy')
 
 @section('content')
 
 {{-- =========================
 HERO SECTION
 ========================= --}}
-<section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
-    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Club Logo" class="mx-auto mb-4 w-24 h-24">
-
-    <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
-        Wealth with SACCOs — Next Level Africa Club
+<section class="text-center max-w-7xl mx-auto py-28 px-6">
+    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Academy Logo" class="mx-auto mb-6 w-24 h-24">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-100 mb-4">
+        E-commerce Campus
     </h1>
-
-    <p class="text-gray-300 max-w-3xl mx-auto mb-6">
-        Build long-term wealth safely using SACCOs, disciplined savings, and strategic borrowing.
+    <p class="text-gray-400 max-w-3xl mx-auto mb-8">
+        Access the strategies and talent that power the biggest e-commerce success stories and achieve your goals faster.
     </p>
-
-    <a href="{{ route('pricing') }}"
-       class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
         Get Started
     </a>
 
-    {{-- Video --}}
-    <div class="mt-8 max-w-4xl mx-auto">
-        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/sacco-placeholder.jpg') }}">
-            <source src="{{ asset('videos/sacco-intro.mp4') }}" type="video/mp4">
+    {{-- Video Placeholder --}}
+    <div class="mt-12 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
+            <source src="{{ asset('videos/ecommerce-intro.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    <p class="text-gray-400 mt-4">
+    {{-- SOCIAL PROOF --}}
+        <p class="text-gray-400 mt-4">
             Join over
             <span class="text-cyan-400 font-semibold">
                 5,862
@@ -41,85 +38,46 @@ HERO SECTION
 </section>
 
 {{-- =========================
-INTRODUCTION / SACCO COURSE
-========================= --}}
-<section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
-
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Grow Wealth the Smart & Safe Way
-    </h2>
-
-    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        SACCO Wealth Building for Everyday People
-    </p>
-
-    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-6">
-        Wealth creation doesn’t have to be risky. This program teaches you how SACCOs work,
-        how to maximize dividends, access affordable loans, and steadily build assets
-        without gambling your future.
-    </p>
-
-    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        Designed for working professionals, entrepreneurs, and families seeking
-        predictable, long-term financial growth through trusted cooperative systems.
-    </p>
-
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Why SACCOs?</h3>
-    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        SACCOs reward discipline, consistency, and patience. They offer high returns
-        on savings, low-interest loans, and financial stability trusted by millions.
-    </p>
-
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Requirements</h3>
-    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
-        No large capital required — just commitment, consistency, and a long-term mindset.
-    </p>
-
-    <a href="{{ route('pricing') }}"
-       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-        Join Now
-    </a>
-</section>
-
-{{-- =========================
-SACCO WEALTH ROADMAP
+CHALLENGES / SERVICES SECTION
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        SACCO Wealth-Building Roadmap
+    <h2 class="text-4xl font-extrabold text-gray-100 mb-12">
+        We know that growing an ecommerce business is a daunting task
     </h2>
 
-    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        A Proven Path to Financial Stability
-    </p>
-
-    <p class="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-10">
-        Learn how to select the right SACCOs, grow savings strategically,
-        leverage affordable loans, and convert cooperative finance into assets.
-    </p>
-
-    <a href="{{ route('pricing') }}"
-       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-        Join Next Level Africa Club
-    </a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 justify-items-center">
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/research.png') }}" alt="Research" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Research</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/branding.png') }}" alt="Branding" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Branding</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/paid-traffic.png') }}" alt="Paid Traffic" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Paid Traffic</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/organic-traffic.png') }}" alt="Organic Traffic" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Organic Traffic</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/conversion-rate-optimization.png') }}" alt="Conversion Rate Optimization" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Conversion Rate Optimization</span>
+        </div>
+    </div>
 </section>
 
 {{-- =========================
-PERSONALIZED SACCO ROADMAP
+PERSONALIZED ROADMAP SECTION
 ========================= --}}
 <section class="bg-gray-900 py-20 px-6">
     <div class="max-w-5xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">
-            SACCO Wealth Framework
-        </h2>
-        <p class="text-gray-300 mb-6">
-            Build Wealth Slowly, Safely, and Sustainably
-        </p>
-        <p class="text-gray-300 mb-6">
-            Unlock the power of SACCOs: Master proven strategies to save effectively, leverage low-interest loans, and steadily grow your long-term wealth.
-        </p>
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Personalized Ecommerce Roadmap</h2>
+        <p class="text-gray-400 mb-6">A Step-by-Step Guide to Success</p>
         <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
     </div>
 
@@ -128,16 +86,13 @@ PERSONALIZED SACCO ROADMAP
         <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
 
         <div class="space-y-16">
-
             {{-- Step 1 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">01</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
-                        Understanding SACCOs
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Niche Market & Niche Research</h3>
                     <p class="text-gray-300">
-                        Learn how SACCOs operate, how member contributions generate dividends, and why disciplined SACCO participation can outperform traditional savings accounts.
+                        Start by pinpointing the industries or types of businesses you’re most interested in writing for. Specialize to increase your value.
                     </p>
                 </div>
             </div>
@@ -146,11 +101,9 @@ PERSONALIZED SACCO ROADMAP
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">02</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
-                        Smart Saving & Contribution Strategies
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Million $$ Product</h3>
                     <p class="text-gray-300">
-                        Build consistent saving habits that maximize dividends and unlock higher borrowing capacity, while learning how to plan contributions without affecting your cash flow.
+                        Find a winning product by mastering persuasive writing, SEO, and marketing trends.
                     </p>
                 </div>
             </div>
@@ -159,11 +112,9 @@ PERSONALIZED SACCO ROADMAP
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">03</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
-                        Leveraging SACCO Loans
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Branding</h3>
                     <p class="text-gray-300">
-                        Learn how to use low-interest SACCO loans responsibly to acquire income-generating assets like small businesses, rental properties, or diversified investments.
+                        Build a strong portfolio showcasing blog posts, email campaigns, sales pages, and measurable results.
                     </p>
                 </div>
             </div>
@@ -172,11 +123,9 @@ PERSONALIZED SACCO ROADMAP
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">04</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
-                        Asset-Based Wealth Growth
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">E-commerce Store Setup</h3>
                     <p class="text-gray-300">
-                        Turn SACCO financing into tangible assets such as land, rental units, or small enterprises, steadily increasing your wealth while minimizing risk.
+                        Create a professional website, leverage social media, freelance platforms, and highlight your unique selling proposition.
                     </p>
                 </div>
             </div>
@@ -185,143 +134,104 @@ PERSONALIZED SACCO ROADMAP
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">05</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
-                        Long-Term Wealth Security
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Traffic: Paid & Organic</h3>
                     <p class="text-gray-300">
-                        Safeguard your wealth through diversification, member benefits, and disciplined SACCO participation to achieve predictable, long-term financial growth.
+                        Deliver high-quality work, communicate effectively, and build long-term client relationships.
                     </p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 {{-- =========================
-WHY CHOOSE OUR SACCO COURSE
+WHY CHOOSE OUR COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
 
-    {{-- Step-by-Step SACCO Learning --}}
+    {{-- Master Ecommerce Success --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2 text-left">
-            <h2 class="text-3xl font-bold mb-4 text-gray-100">
-                Step-by-Step SACCO Wealth Building
-            </h2>
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">Master Ecommerce Success: Transform Your Online Business</h2>
             <p class="text-gray-300 text-lg">
-                Learn how SACCOs really work — from member contributions
-                to dividends, loans, and long-term wealth growth.
-                This course breaks everything down into simple, practical steps
-                so you can confidently use SACCOs to grow wealth safely,
-                consistently, and legally.
+                Our course is your gateway to unlocking the secrets of successful ecommerce. With 11 in-depth categories, it's a structured roadmap for beginners and experienced entrepreneurs.
             </p>
         </div>
         <div class="md:w-1/2">
-            <img src="{{ asset('images/sacco/roadmap.png') }}"
-                 alt="SACCO Wealth Roadmap"
-                 class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Ecommerce Roadmap" class="rounded-2xl shadow-lg w-full">
         </div>
     </div>
 
-    {{-- Expert SACCO Guidance --}}
+    {{-- Millionaire Professor --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/sacco/expert.png') }}"
-                 alt="SACCO Investment Expert"
-                 class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Professor Andrew Bass" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Learn from Proven SACCO & Finance Experts
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Learn from an Experienced Ecommerce Mentor</h3>
             <p class="text-gray-300">
-                SACCOs are one of the safest wealth-building vehicles — when used correctly.
-                You’ll learn from experts who understand SACCO structures,
-                dividend strategies, loan leveraging, and risk management.
-                No hype, no gambling — just smart, disciplined financial growth.
+                Imagine learning from a mentor who deeply understands ecommerce and has successfully applied proven strategies in real-world businesses. Gain practical knowledge, insights, and guidance designed to help you build sustainable income and achieve your goals through ecommerce.
             </p>
         </div>
     </div>
 
-    {{-- Practical Guidance & Support --}}
+    {{-- Daily Support & Coaching --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/sacco/support.png') }}"
-                 alt="SACCO Support & Guidance"
-                 class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Daily Support & Coaching" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Practical Guidance & Ongoing Support
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Daily Support and Coaching</h3>
             <p class="text-gray-300">
-                Choosing the right SACCO, understanding bylaws,
-                maximizing dividends, and using loans wisely
-                can make or break your financial future.
-                You’ll receive clear guidance and support to help you
-                make smart decisions and avoid common SACCO mistakes.
+                Our team provides daily support and expert coaching to keep you motivated, enhance skills, and conquer the ecommerce world one step at a time.
             </p>
         </div>
     </div>
 
-    {{-- SACCO Community --}}
+    {{-- Community --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/sacco/community.png') }}"
-                 alt="SACCO Community"
-                 class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Community" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Wealth-Focused SACCO Community
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Community: Dive Deeper into Ecommerce</h3>
             <p class="text-gray-300">
-                Build wealth alongside disciplined, like-minded individuals
-                focused on long-term financial security.
-                Share experiences, SACCO opportunities, and real-life lessons
-                inside a supportive community designed for sustainable growth —
-                not shortcuts.
+                Daily insights, thought-provoking questions, and a supportive network to help you thrive in the ecommerce landscape.
             </p>
         </div>
     </div>
 
-    {{-- CTA --}}
     <div class="text-center mt-12">
-        <a href="{{ route('pricing') }}"
-           class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Academy
         </a>
         <p class="text-gray-400 mt-4">
-            Trusted by thousands to build safe, long-term wealth through SACCOs
+            We have taught over
+            <span class="text-cyan-400 font-semibold">
+                5,862
+            </span>
+            students already
         </p>
     </div>
-
 </section>
+
 
 {{-- =========================
 TESTIMONIALS
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 space-y-10">
-    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">
-        What Our Members Say
-    </h2>
+    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">What Our Students Say</h2>
 
     <div class="grid md:grid-cols-2 gap-8">
+        {{-- Testimonial 1 --}}
         <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">
-                “I finally understand how to use SACCO loans properly.
-                I’ve acquired land and increased my savings consistently.”
-            </p>
-            <h4 class="text-gray-100 font-bold">Peter M., Kiambu</h4>
+            <p class="text-gray-300 mb-4">"This course completely transformed my ecommerce business! I tripled my revenue in 3 months."</p>
+            <h4 class="text-gray-100 font-bold">Jane K., Nairobi</h4>
         </div>
-
+        {{-- Testimonial 2 --}}
         <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">
-                “This program changed my mindset about money.
-                SACCOs are now my main wealth-building strategy.”
-            </p>
-            <h4 class="text-gray-100 font-bold">Grace W., Nairobi</h4>
+            <p class="text-gray-300 mb-4">"The strategies taught in Next Level Africa Club gave me the confidence to launch my online store successfully."</p>
+            <h4 class="text-gray-100 font-bold">David M., Mombasa</h4>
         </div>
     </div>
 </section>
@@ -331,34 +241,45 @@ GET ACCESS & PRICING
 ========================= --}}
 <section class="max-w-7xl mx-auto py-20 px-6 text-center">
 
+    {{-- Section Heading --}}
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
-        Get access for only KES 1,999
+        Get access to the best education platform for only KES 1,999
     </h2>
 
-    <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
-        <h3 class="text-2xl font-bold text-gray-100 mb-4">
-            Take Action — Build Wealth Safely
-        </h3>
+    {{-- Video --}}
+    <div class="mt-8 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
+            <source src="{{ asset('videos/ecommerce-access.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
+    {{-- Pricing Card --}}
+    <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">Take Action: You need to act now.</h3>
         <div class="text-4xl font-extrabold text-cyan-400 mb-2">
             KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
+        <div class="text-gray-300 mb-6">Forever</div>
 
         <ul class="space-y-2 text-left text-gray-300 mb-6">
-            <li>✔ SACCO investment mastery</li>
-            <li>✔ Asset-based wealth strategies</li>
-            <li>✔ Access to expert mentors</li>
-            <li>✔ Community support</li>
-            <li>✔ Beginner-friendly</li>
-            <li>✔ Lifetime access</li>
+            <li>✔ Simple step-by-step tutorials</li>
+            <li>✔ 15 wealth creation methods</li>
+            <li>✔ Access to millionaire mentors</li>
+            <li>✔ Community chat groups</li>
+            <li>✔ No experience needed</li>
+            <li>✔ Custom-made learning</li>
+            <li>✔ Cancel anytime</li>
+            <li>✔ Risk-free</li>
         </ul>
 
-        <a href="{{ route('pricing') }}"
-           class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition mb-2">
+            Join Next Level Africa Academy
         </a>
+        <p class="text-xs text-gray-400 mt-2">Lock in the price before it increases. Act First.</p>
     </div>
 </section>
+
 {{-- ========================= --}}
 {{-- FREQUENTLY ASKED QUESTIONS --}}
 {{-- ========================= --}}
@@ -393,14 +314,14 @@ GET ACCESS & PRICING
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
                 Results vary depending on effort, consistency, and execution.
-                The Next Level Africa Club focuses on real skills, not shortcuts.
+                Next Level Africa Academy focuses on real skills, not shortcuts.
             </div>
         </div>
 
         <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
             <button class="faq-question w-full flex justify-between items-center p-6 text-left">
                 <span class="text-lg font-semibold text-cyan-400">
-                    Do I need money once inside Next Level Africa Club?
+                    Do I need money once inside the Next Level Africa Academy?
                 </span>
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
@@ -441,7 +362,7 @@ GET ACCESS & PRICING
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
-                No. Next Level Africa Club works globally.
+                No. Next Level Africa Academy works globally.
             </div>
         </div>
 

@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('seo_title', 'Next Level Africa Club — Money Making Is a Skill')
+@section('seo_title', 'Next Level Africa Academy — Money Making Is a Skill')
 @section('meta_description', 'Money making is a skill. We teach you how to master it with real systems, mentors, and execution.')
 
 @section('content')
@@ -10,7 +10,7 @@ HERO SECTION
 ========================= --}}
 <section class="text-center max-w-5xl mx-auto space-y-8">
     <h1 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-100">
-    Next Level Africa
+    Next Level Africa Academy
 </h1>
 
 <p class="text-xl text-gray-400 mt-4">
@@ -164,7 +164,7 @@ MID CTA
 <section class="text-center mt-32">
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-12 py-5 rounded-xl font-bold text-lg hover:bg-magenta-600 transition shadow-xl">
-        Join Next Level Africa
+        Join Next Level Africa Academy
     </a>
 </section>
 
@@ -178,7 +178,7 @@ WHAT YOU WILL LEARN
     </h2>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-16">
-        Next Level Africa is the first — and only — place that teaches you
+        Next Level Africa Academy is the first — and only — place that teaches you
         how to take advantage of what’s working right now.
         Our students receive the latest updates by <span class="text-cyan-400 font-semibold">8 AM</span>.
     </p>
@@ -275,7 +275,7 @@ FINAL CTA
 
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-12 py-5 rounded-xl font-bold text-lg hover:bg-cyan-500 transition shadow-xl">
-        Join Next Level Africa
+        Join Next Level Africa Academy
     </a>
 </section>
 
@@ -285,7 +285,7 @@ FINAL CTA
 <section class="w-full max-w-6xl mb-24 text-center">
 
     <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-    Next Level Africa Wins
+    Next Level Africa Academy Wins
     </h2>
 
     <p class="text-gray-300 mb-10">
@@ -308,7 +308,7 @@ FINAL CTA
     {{-- CTA --}}
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-10 py-4 rounded-xl font-extrabold hover:bg-cyan-500 transition">
-        Join Next Level Africa
+        Join Next Level Africa Academy
     </a>
 
     {{-- SOCIAL PROOF --}}
@@ -350,7 +350,7 @@ FINAL CTA
                 <p class="text-gray-400">
                     Started with zero knowledge. Within months, scaled to
                     <span class="text-cyan-400 font-semibold">KES 70,000/month</span>
-                    trading crypto and long-term shares using Next Level Africa Club systems.
+                    trading crypto and long-term shares using Next Level Africa Academy systems.
                 </p>
             </div>
         </div>
@@ -446,7 +446,7 @@ FINAL CTA
                 Daily Live Coaching With Millionaires
             </h3>
             <p class="text-gray-400">
-                Every mentor inside Next Level Africa has made millions using
+                Every mentor inside Next Level Africa Academy has made millions using
                 the exact methods they teach.
                 <br><br>
                 From making your first shilling to scaling a
@@ -454,7 +454,7 @@ FINAL CTA
                 you receive daily lessons, organized coursework, and constant mentorship.
                 <br><br>
                 <span class="text-magenta-500 font-semibold">
-                    Next Level Africa Club is unmatched.
+                    Next Level Africa Academy is unmatched.
                 </span>
             </p>
         </div>
@@ -496,7 +496,7 @@ FINAL CTA
 
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-12 py-5 rounded-2xl font-extrabold text-lg hover:bg-cyan-500 transition">
-        Join Next Level Africa Club
+        Join Next Level Africa Academy
     </a>
 
     <p class="mt-4 text-gray-300 text-sm">
@@ -628,7 +628,7 @@ FINAL CTA
         {{-- CTA --}}
         <a href="{{ route('pricing') }}"
             class="inline-block bg-cyan-400 text-black px-12 py-5 rounded-2xl font-extrabold text-lg hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
 
         <p class="mt-4 text-gray-400 text-sm">
@@ -666,7 +666,7 @@ FINAL CTA
         <span class="text-magenta-500 font-semibold">KES 10,499 / month</span>.
         <br><br>
         This is your last chance.
-        Thousands have already joined Next Level Africa Club
+        Thousands have already joined Next Level Africa Academy
         and are on their way to financial freedom.
         <br><br>
         Don’t miss out on this opportunity.
@@ -675,7 +675,7 @@ FINAL CTA
     {{-- Final CTA --}}
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-14 py-5 rounded-2xl font-extrabold text-lg hover:bg-cyan-500 transition">
-        Join Next Level Africa Club
+        Join Next Level Africa Academy
     </a>
 
     <p class="text-gray-400 mt-4">
@@ -720,14 +720,14 @@ FINAL CTA
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
                 Results vary depending on effort, consistency, and execution.
-                Next Level Africa Club focuses on real skills, not shortcuts.
+                Next Level Africa Academy focuses on real skills, not shortcuts.
             </div>
         </div>
 
         <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
             <button class="faq-question w-full flex justify-between items-center p-6 text-left">
                 <span class="text-lg font-semibold text-cyan-400">
-                    Do I need money once inside Next Level Africa Club?
+                    Do I need money once inside Next Level Africa Academy?
                 </span>
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
@@ -768,7 +768,7 @@ FINAL CTA
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
-                No. Next Level Africa Club works globally.
+                No. Next Level Africa Academy works globally.
             </div>
         </div>
 
@@ -808,7 +808,7 @@ FINAL CTA
 
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black px-14 py-5 rounded-2xl font-extrabold text-lg hover:bg-cyan-500 transition">
-        Join Next Level Africa Club
+        Join Next Level Africa Academy
     </a>
 
     <div class="mt-10 flex justify-center">

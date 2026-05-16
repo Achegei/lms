@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'E-commerce Campus | Next Level Africa Club')
+@section('title', 'Digital Income Systems | Next Level Africa Academy')
 
 @section('content')
 
@@ -8,12 +8,12 @@
 HERO SECTION
 ========================= --}}
 <section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
-    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Club Logo" class="mx-auto mb-4 w-24 h-24">
+    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Academy Logo" class="mx-auto mb-4 w-24 h-24">
     <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
-        Stocks Campus — The Next Level Africa Club
+        Digital Income Systems — Next Level Africa Academy
     </h1>
     <p class="text-gray-300 max-w-3xl mx-auto mb-6">
-        Uncover the strategies and wisdom of a millionaire trader to propel your stock trading journey towards success.
+        Automate your online business and unlock passive revenue streams with proven digital systems.
     </p>
     <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
         Get Started
@@ -22,101 +22,59 @@ HERO SECTION
     {{-- Video Placeholder --}}
     <div class="mt-8 max-w-4xl mx-auto">
         <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
-            <source src="{{ asset('videos/ecommerce-intro.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/digital-income-intro.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    <p class="text-gray-400 mt-4">
-            Join over
-            <span class="text-cyan-400 font-semibold">
-                5,862
-            </span>
-            members already inside
-    </p>
+
+    {{-- Social Proof --}}
+    <div class="mt-4 text-gray-300 text-lg">
+        <span class="text-cyan-400 font-bold">{{ rand(25000, 40000) }}+</span> people have already built automated income streams
+    </div>
 </section>
 
 {{-- =========================
-INTRODUCTION / STOCK TRADING COURSE
+INTRODUCTION / COURSE OVERVIEW
 ========================= --}}
 <section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
 
-    {{-- Main Heading --}}
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Master Stock Trading with a Successful Mentor/Trader
+        Build Your Digital Income System
     </h2>
 
-    {{-- Subheading --}}
     <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        Designed for Traders of All Levels
+        Step-by-Step Guidance for Automating Online Revenue
     </p>
 
-    {{-- Intro Paragraph --}}
     <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-6">
-        Achieving proficiency in stock trading is now simpler than ever with
-        <strong>Professional</strong> Traders.
-        Welcome to <strong>Next Level Africa Stocks Course</strong> — a structured
-        program built to help you master the financial markets with confidence.
+        Learn how to set up automated online businesses that generate income consistently, even while you sleep. 
+        Our program guides you through creating systems for e-commerce, digital products, affiliate marketing, 
+        and other online revenue streams—all tailored to beginners and experienced entrepreneurs alike.
     </p>
 
-    {{-- Course Value --}}
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        This comprehensive course offers structured learning, daily guidance,
-        and invaluable industry insights to help you trade smarter, manage risk,
-        and build consistent income in the markets.
+        From setting up your first funnel to scaling multiple streams, we provide mentorship, templates, and 
+        strategies to reduce trial-and-error and maximize your passive income potential.
     </p>
 
-    {{-- Why Stocks --}}
     <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
-        Why Stocks?
+        Why Automate?
     </h3>
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        Gain control over your time and income by mastering stock trading.
-        Trading allows you to work independently, scale your earnings,
-        and operate from anywhere in the world.
+        Automation allows you to free your time, scale faster, and generate revenue 24/7. 
+        With the right systems in place, your business can work for you while you focus on growth.
     </p>
 
-    {{-- Requirements --}}
     <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
         Requirements
     </h3>
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
-        A minimum capital requirement of <strong>KES 200,000</strong> is recommended
-        to apply the strategies taught effectively and manage risk responsibly.
+        No prior experience is required. A laptop, internet connection, and willingness to implement proven systems are enough to get started.
     </p>
 
-    {{-- Join Now Button --}}
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
         Join Now
-    </a>
-
-</section>
-{{-- =========================
-TAILORED STOCK TRADING ROADMAP
-========================= --}}
-<section class="max-w-6xl mx-auto py-20 px-6 text-center">
-
-    {{-- Section Title --}}
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Tailored Stock Trading Roadmap
-    </h2>
-
-    {{-- Subtitle --}}
-    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        Your Step-by-Step Path to Success in the Financial Markets
-    </p>
-
-    {{-- Description --}}
-    <p class="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-10">
-        Learn how to attract high-value investments, manage your portfolio efficiently,
-        and thrive in the competitive world of stock trading. This roadmap is designed
-        to take you from fundamentals to confident execution with clarity and precision.
-    </p>
-
-    {{-- CTA Button --}}
-    <a href="{{ route('pricing') }}"
-       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-        Join the Next Level Africa Club
     </a>
 
 </section>
@@ -126,11 +84,13 @@ PERSONALIZED ROADMAP SECTION
 ========================= --}}
 <section class="bg-gray-900 py-20 px-6">
     <div class="max-w-5xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Stock Market Fundamentals</h2>
-        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Success</p>
-        <p class="text-gray-300 mb-6">A Unlock the Power of Stock Trading: Master proven strategies to attract high-value investments, manage your portfolio with confidence, and succeed in today’s competitive stock market.</p>
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Your Digital Income Roadmap</h2>
+        <p class="text-gray-300 mb-6">Step-by-Step Guide to Automating Your Business</p>
+        <p class="text-gray-300 mb-6">
+            Learn how to create, launch, and automate profitable online systems that generate consistent revenue while you focus on other opportunities.
+        </p>
         <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join the Next Level Africa Club
+            Join the Next Level Africa Academy
         </a>
     </div>
 
@@ -143,9 +103,9 @@ PERSONALIZED ROADMAP SECTION
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">01</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Stock Market Fundamentals</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Foundation & Market Research</h3>
                     <p class="text-gray-300">
-                        Gain a foundational understanding of stock market basics and terminology. Explore the significance of stock markets in the financial world and how they function. Start your journey by choosing a trusted online brokerage platform to open and fund your stock trading account with ease.
+                        Identify profitable niches, research audience demand, and learn how to select products or services that generate high ROI. Lay the groundwork for your digital income system.
                     </p>
                 </div>
             </div>
@@ -154,9 +114,9 @@ PERSONALIZED ROADMAP SECTION
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">02</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Basic Trading Strategies</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">System Setup & Automation</h3>
                     <p class="text-gray-300">
-                        Delve into fundamental trading strategies suitable for beginners. Learn about essential risk management principles to protect your investments. Master the art of making your first trades while comprehending the importance of minimizing risks.
+                        Build the infrastructure for your business: automated funnels, payment gateways, email sequences, and delivery systems. Reduce manual work and streamline operations.
                     </p>
                 </div>
             </div>
@@ -165,9 +125,9 @@ PERSONALIZED ROADMAP SECTION
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">03</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Advanced Trading Techniques</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Marketing & Client Acquisition</h3>
                     <p class="text-gray-300">
-                        Elevate your skills with advanced technical analysis methods and trading patterns. Craft a personalized trading plan rooted in technical indicators to enhance decision-making. Simultaneously, gain insights into options trading fundamentals and advanced risk management strategies for trading discipline.
+                        Learn how to attract leads through paid ads, social media, content marketing, and email campaigns. Convert prospects into paying customers efficiently.
                     </p>
                 </div>
             </div>
@@ -176,10 +136,9 @@ PERSONALIZED ROADMAP SECTION
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">04</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Trading Strategies Mastery</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Scaling & Optimization</h3>
                     <p class="text-gray-300">
-
-Refine your expertise by mastering advanced options trading strategies, including spreads. Develop a comprehensive understanding of income generation and effective risk mitigation through options. Explore advanced trading techniques, such as swing trading, day trading, and quantitative trading, while delving into the realm of algorithmic trading to expand your trading toolkit.
+                        Refine your systems, split-test funnels, and optimize automation for higher revenue. Scale your digital income streams without increasing your workload.
                     </p>
                 </div>
             </div>
@@ -188,56 +147,68 @@ Refine your expertise by mastering advanced options trading strategies, includin
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">05</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Portfolio Management and Ongoing Learning</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Ongoing Growth & Passive Revenue</h3>
                     <p class="text-gray-300">
-                        Learn to construct and optimize a diversified stock portfolio using advanced portfolio optimization techniques. As you progress, embrace continuous learning through webinars, seminars, and networking with seasoned traders. Stay updated with evolving market trends and strategies to maintain your edge in the dynamic world of stock trading.
+                        Continue to automate, expand, and diversify your online business. Reinvest profits, add new streams, and enjoy a fully passive income portfolio that grows over time.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 {{-- =========================
 WHY CHOOSE OUR COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
 
-    {{-- Master Ecommerce Success --}}
+    {{-- Step-by-Step Systems --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2 text-left">
-            <h2 class="text-3xl font-bold mb-4 text-gray-100">Step-by-Step Learning:</h2>
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">Systemized, Step-by-Step Learning</h2>
             <p class="text-gray-300 text-lg">
-                Join our course for a structured journey into the world of stock trading. With a curriculum divided into 6 comprehensive categories, it serves as your step-by-step guide to mastering stock trading strategies. Whether you're a novice or a seasoned investor, our course offers actionable insights and techniques to enhance your stock trading skills and boost your financial success.
+                This course breaks down digital income into clear, repeatable systems.
+                You’ll learn how to build automated online businesses step by step —
+                from idea validation to setup, automation, and scaling.
+                No guesswork. No overwhelm. Just proven systems that work.
             </p>
         </div>
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Ecommerce Roadmap" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Digital Income Systems Roadmap" class="rounded-2xl shadow-lg w-full">
         </div>
     </div>
 
-    {{-- Millionaire Professor --}}
+    {{-- Proven Digital Systems Mentor --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Professor Andrew Bass" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Digital Systems Mentor" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Stock Trading Success with Experts</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Learn From People Who Run Real Digital Systems
+            </h3>
             <p class="text-gray-300">
-          Imagine having a mentor who not only comprehends the nuances of stock trading but has also achieved remarkable financial success in the field. Meet experts who will be, your guiding light in the Stocks Campus. With Excellent track record in stock trading, they are not just educators; but seasoned experts in the realm of financial assets. Their wealth of stock trading knowledge and experience will empower you to pursue your financial dreams through the art of strategic stock trading.
+                You’re not learning theory — you’re learning from builders.
+                Our mentors actively run automated digital income systems across
+                ecommerce, content, funnels, and AI-powered workflows.
+                Every lesson is based on real-world execution, not hype.
             </p>
         </div>
     </div>
 
-    {{-- Daily Support & Coaching --}}
+    {{-- Automation & Ongoing Support --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Daily Support & Coaching" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Automation Support" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Daily Support and Coaching</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Automation, Support & Optimization
+            </h3>
             <p class="text-gray-300">
-              Thriving in the Stocks Campus demands dedication and a steadfast mindset, especially given the dynamic nature of stock trading. That's why we provide daily support and expert coaching to fortify your mental resilience. Our committed team is at your service, ready to address your queries, offer constructive guidance, and provide priceless insights. With our mentorship, you'll stay motivated, refine your skills, and navigate the ever-evolving world of stock trading, one day at a time.
+                Building digital income is not about working harder — it’s about
+                designing smarter systems. You’ll receive ongoing support to help
+                you automate tasks, optimize conversions, and remove bottlenecks
+                so your income can grow even when you’re offline.
             </p>
         </div>
     </div>
@@ -245,30 +216,32 @@ WHY CHOOSE OUR COURSE
     {{-- Community --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Community" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Digital Income Community" class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Community:</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Builders-Only Community</h3>
             <p class="text-gray-300">
-            Within the Stocks Campus community, enthusiasts flourish in an environment where collaboration and mutual support reign supreme. Here, individuals driven by a shared passion for financial growth unite to learn, exchange valuable insights, and collectively thrive. Our platform nurtures a sense of camaraderie, guaranteeing that everyone progresses together, bolstered by a like-minded community that shares not just knowledge but also a unified vision of success in the world of stock trading.
+                Inside the Digital Income Systems community, you’ll connect with
+                people actively building automated income streams.
+                Share systems, tools, results, and lessons learned —
+                all inside a focused environment designed for execution and growth.
             </p>
         </div>
     </div>
 
     <div class="text-center mt-12">
         <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
         <p class="text-gray-400 mt-4">
-            We have taught over
+            Join over
             <span class="text-cyan-400 font-semibold">
                 5,862
             </span>
-            students already
+            members already inside
         </p>
     </div>
 </section>
-
 
 
 {{-- =========================
@@ -280,13 +253,13 @@ TESTIMONIALS
     <div class="grid md:grid-cols-2 gap-8">
         {{-- Testimonial 1 --}}
         <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">"This stocks trading course completely changed how I approach the market. I finally understood strategies that actually work, and my portfolio grew significantly within just a few months."</p>
-            <h4 class="text-gray-100 font-bold">Jane K., Nairobi</h4>
+            <p class="text-gray-300 mb-4">"I built my first automated online store in 30 days and now earn consistent revenue while focusing on other projects."</p>
+            <h4 class="text-gray-100 font-bold">Alex N., Nairobi</h4>
         </div>
         {{-- Testimonial 2 --}}
         <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">"The guidance and strategies from Next Level Africa Club gave me the confidence to start trading stocks successfully. I now make informed decisions and track my progress with clarity."</p>
-            <h4 class="text-gray-100 font-bold">David M., Mombasa</h4>
+            <p class="text-gray-300 mb-4">"The systems taught in Next Level Africa Academy allowed me to create multiple passive income streams. My life has completely changed."</p>
+            <h4 class="text-gray-100 font-bold">Sophia K., Mombasa</h4>
         </div>
     </div>
 </section>
@@ -296,45 +269,41 @@ GET ACCESS & PRICING
 ========================= --}}
 <section class="max-w-7xl mx-auto py-20 px-6 text-center">
 
-    {{-- Section Heading --}}
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
-        Get access to the best education platform for only KES 1,999
+        Get access to Digital Income Systems for only KES 1,999
     </h2>
 
-    {{-- Video --}}
     <div class="mt-8 max-w-4xl mx-auto">
         <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
-            <source src="{{ asset('videos/ecommerce-access.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/digital-income-access.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    {{-- Pricing Card --}}
     <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
-        <h3 class="text-2xl font-bold text-gray-100 mb-4">Take Action: You need to act now.</h3>
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">Start building your automated business today</h3>
         <div class="text-4xl font-extrabold text-cyan-400 mb-2">
             KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
-        <div class="text-gray-300 mb-6">Forever</div>
+        <div class="text-gray-300 mb-6">Lifetime Access</div>
 
         <ul class="space-y-2 text-left text-gray-300 mb-6">
-            <li>✔ Simple step-by-step tutorials</li>
-            <li>✔ 15 wealth creation methods</li>
-            <li>✔ Access to millionaire mentors</li>
+            <li>✔ Step-by-step automation tutorials</li>
+            <li>✔ Multiple digital income strategies</li>
+            <li>✔ Mentorship from successful entrepreneurs</li>
             <li>✔ Community chat groups</li>
-            <li>✔ No experience needed</li>
-            <li>✔ Custom-made learning</li>
+            <li>✔ No prior experience needed</li>
+            <li>✔ Custom-made learning paths</li>
             <li>✔ Cancel anytime</li>
             <li>✔ Risk-free</li>
         </ul>
 
         <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition mb-2">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
         <p class="text-xs text-gray-400 mt-2">Lock in the price before it increases. Act First.</p>
     </div>
 </section>
-
 {{-- ========================= --}}
 {{-- FREQUENTLY ASKED QUESTIONS --}}
 {{-- ========================= --}}
@@ -369,14 +338,14 @@ GET ACCESS & PRICING
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
                 Results vary depending on effort, consistency, and execution.
-                Next Level Africa Club focuses on real skills, not shortcuts.
+                The Next Level Africa Academy focuses on real skills, not shortcuts.
             </div>
         </div>
 
         <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
             <button class="faq-question w-full flex justify-between items-center p-6 text-left">
                 <span class="text-lg font-semibold text-cyan-400">
-                    Do I need money once inside the Next Level Africa Club?
+                    Do I need money once inside Next Level Africa Academy?
                 </span>
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
@@ -417,7 +386,7 @@ GET ACCESS & PRICING
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
-                No. Next Level Africa Club works globally.
+                No. Next Level Africa Academy works globally.
             </div>
         </div>
 
@@ -469,3 +438,4 @@ document.querySelectorAll('.faq-question').forEach(button => {
 </script>
 
 @endsection
+

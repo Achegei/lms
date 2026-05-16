@@ -18,14 +18,19 @@ class PageController extends Controller
         return view('pages.faq');
     } 
 
-    public function about(): View
+    public function saccos():View
     {
-        return view('pages.about');
+        return view('pages.saccos');
+    }   
+
+    public function crypto(): View
+    {
+        return view('pages.crypto');
     }
 
-    public function services(): View
+    public function copywriting(): View
     {
-        return view('pages.services');
+        return view('pages.copywriting');
     }
 
     public function terms(): View
@@ -36,6 +41,10 @@ class PageController extends Controller
     public function policy(): View
     {
         return view('pages.privacy-policy');
+    }
+    public function pricing():View
+    {
+        return view('pages.pricing');
     }
 
     // ==============================
@@ -70,14 +79,14 @@ class PageController extends Controller
     // ==============================
     // Other Pages (unchanged)
     // ==============================
-    public function careers(): View
+    public function investments(): View
     {
-        return view('pages.careers');
+        return view('pages.investments');
     }
 
-    public function pricing(): View
+    public function ecommerce(): View
     {
-        return view('pages.pricing');
+        return view('pages.ecommerce');
     }
 
     public function documentation(): View
@@ -129,8 +138,8 @@ class PageController extends Controller
     {
         return view('pages.faceless-shorts');
     }
-    public function partners(): View
+    public function marketing(): View
 {
-    return view('pages.partners');
+    return view('pages.marketing');
 }
 }

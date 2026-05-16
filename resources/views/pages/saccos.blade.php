@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Crypto Campus | Next Level Africa Club')
+@section('title', 'Wealth with SACCOs |  Next Level Africa Academy')
 
 @section('content')
 
@@ -8,27 +8,30 @@
 HERO SECTION
 ========================= --}}
 <section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
-    <img src="{{ asset('images/logo.png') }}" alt="Elite Club Logo" class="mx-auto mb-4 w-24 h-24">
+    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Academy Logo" class="mx-auto mb-4 w-24 h-24">
+
     <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
-        Crypto Campus — Next Level Africa Club
+        Wealth with SACCOs — Next Level Africa Academy
     </h1>
+
     <p class="text-gray-300 max-w-3xl mx-auto mb-6">
-        Learn how to profit from cryptocurrency markets using proven strategies from experienced crypto professionals.
+        Build long-term wealth safely using SACCOs, disciplined savings, and strategic borrowing.
     </p>
-    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+
+    <a href="{{ route('pricing') }}"
+       class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
         Get Started
     </a>
 
-    {{-- Video Placeholder --}}
+    {{-- Video --}}
     <div class="mt-8 max-w-4xl mx-auto">
-        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/crypto-placeholder.jpg') }}">
-            <source src="{{ asset('videos/crypto-intro.mp4') }}" type="video/mp4">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/sacco-placeholder.jpg') }}">
+            <source src="{{ asset('videos/sacco-intro.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    {{-- SOCIAL PROOF --}}
-        <p class="text-gray-400 mt-4">
+    <p class="text-gray-400 mt-4">
             Join over
             <span class="text-cyan-400 font-semibold">
                 5,862
@@ -38,45 +41,38 @@ HERO SECTION
 </section>
 
 {{-- =========================
-INTRODUCTION / CRYPTO COURSE
+INTRODUCTION / SACCO COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
 
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Master Cryptocurrency with Proven Market Strategies
+        Grow Wealth the Smart & Safe Way
     </h2>
 
     <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        Designed for Beginners & Advanced Traders
+        SACCO Wealth Building for Everyday People
     </p>
 
     <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-6">
-        Welcome to <strong>"Next Level Africa Crypto Course"</strong> —
-        a complete system designed to help you understand,
-        trade, and invest in cryptocurrency markets with confidence.
+        Wealth creation doesn’t have to be risky. This program teaches you how SACCOs work,
+        how to maximize dividends, access affordable loans, and steadily build assets
+        without gambling your future.
     </p>
 
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        This course delivers structured lessons, real-market analysis,
-        and practical strategies to help you avoid costly mistakes,
-        manage risk, and grow consistently in the crypto space.
+        Designed for working professionals, entrepreneurs, and families seeking
+        predictable, long-term financial growth through trusted cooperative systems.
     </p>
 
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
-        Why Crypto?
-    </h3>
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Why SACCOs?</h3>
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        Cryptocurrency offers unmatched financial opportunity,
-        borderless income, and the ability to participate in
-        the fastest-growing financial ecosystem in the world.
+        SACCOs reward discipline, consistency, and patience. They offer high returns
+        on savings, low-interest loans, and financial stability trusted by millions.
     </p>
 
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
-        Requirements
-    </h3>
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Requirements</h3>
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
-        No prior experience required. A small starting capital is enough
-        to begin learning and applying the strategies taught.
+        No large capital required — just commitment, consistency, and a long-term mindset.
     </p>
 
     <a href="{{ route('pricing') }}"
@@ -86,101 +82,114 @@ INTRODUCTION / CRYPTO COURSE
 </section>
 
 {{-- =========================
-TAILORED CRYPTO ROADMAP
+SACCO WEALTH ROADMAP
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 text-center">
-
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Tailored Crypto Trading Roadmap
+        SACCO Wealth-Building Roadmap
     </h2>
 
     <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
-        Your Step-by-Step Path to Crypto Success
+        A Proven Path to Financial Stability
     </p>
 
     <p class="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-10">
-        Learn how to analyze crypto markets, identify profitable opportunities,
-        manage volatility, and build long-term digital wealth with confidence.
+        Learn how to select the right SACCOs, grow savings strategically,
+        leverage affordable loans, and convert cooperative finance into assets.
     </p>
 
     <a href="{{ route('pricing') }}"
        class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-        Join Next Level Africa Club
+        Join Next Level Africa Academy
     </a>
 </section>
 
 {{-- =========================
-PERSONALIZED ROADMAP SECTION
+PERSONALIZED SACCO ROADMAP
 ========================= --}}
 <section class="bg-gray-900 py-20 px-6">
     <div class="max-w-5xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Crypto Market Foundations</h2>
-        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Digital Assets</p>
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">
+            SACCO Wealth Framework
+        </h2>
         <p class="text-gray-300 mb-6">
-            Learn how cryptocurrencies work, how blockchain powers them,
-            and how to profit responsibly in volatile markets.
+            Build Wealth Slowly, Safely, and Sustainably
+        </p>
+        <p class="text-gray-300 mb-6">
+            Unlock the power of SACCOs: Master proven strategies to save effectively, leverage low-interest loans, and steadily grow your long-term wealth.
         </p>
         <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
     </div>
 
+    {{-- Steps with vertical cyan line --}}
     <div class="relative max-w-5xl mx-auto">
         <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
 
         <div class="space-y-16">
 
+            {{-- Step 1 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">01</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Crypto Fundamentals</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
+                        Understanding SACCOs
+                    </h3>
                     <p class="text-gray-300">
-                        Understand blockchain, wallets, exchanges,
-                        and how crypto markets operate globally.
+                        Learn how SACCOs operate, how member contributions generate dividends, and why disciplined SACCO participation can outperform traditional savings accounts.
                     </p>
                 </div>
             </div>
 
+            {{-- Step 2 --}}
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">02</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Market Analysis</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
+                        Smart Saving & Contribution Strategies
+                    </h3>
                     <p class="text-gray-300">
-                        Learn technical and fundamental analysis
-                        to identify high-probability trade setups.
+                        Build consistent saving habits that maximize dividends and unlock higher borrowing capacity, while learning how to plan contributions without affecting your cash flow.
                     </p>
                 </div>
             </div>
 
+            {{-- Step 3 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">03</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Risk Management</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
+                        Leveraging SACCO Loans
+                    </h3>
                     <p class="text-gray-300">
-                        Protect capital using position sizing,
-                        stop-loss strategies, and discipline.
+                        Learn how to use low-interest SACCO loans responsibly to acquire income-generating assets like small businesses, rental properties, or diversified investments.
                     </p>
                 </div>
             </div>
 
+            {{-- Step 4 --}}
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">04</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Advanced Strategies</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
+                        Asset-Based Wealth Growth
+                    </h3>
                     <p class="text-gray-300">
-                        Explore swing trading, trend trading,
-                        and portfolio diversification techniques.
+                        Turn SACCO financing into tangible assets such as land, rental units, or small enterprises, steadily increasing your wealth while minimizing risk.
                     </p>
                 </div>
             </div>
 
+            {{-- Step 5 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">05</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Long-Term Wealth</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">
+                        Long-Term Wealth Security
+                    </h3>
                     <p class="text-gray-300">
-                        Build sustainable crypto wealth through
-                        smart investing and market cycles.
+                        Safeguard your wealth through diversification, member benefits, and disciplined SACCO participation to achieve predictable, long-term financial growth.
                     </p>
                 </div>
             </div>
@@ -190,90 +199,89 @@ PERSONALIZED ROADMAP SECTION
 </section>
 
 {{-- =========================
-WHY CHOOSE OUR CRYPTO COURSE
+WHY CHOOSE OUR SACCO COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
 
-    {{-- Step-by-Step Learning --}}
+    {{-- Step-by-Step SACCO Learning --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2 text-left">
             <h2 class="text-3xl font-bold mb-4 text-gray-100">
-                Step-by-Step Crypto Mastery
+                Step-by-Step SACCO Wealth Building
             </h2>
             <p class="text-gray-300 text-lg">
-                Enter the world of cryptocurrency with clarity and confidence.
-                This course is structured into clearly defined modules that take you
-                from beginner fundamentals to advanced crypto strategies.
-                Whether you are new to crypto or already trading, you’ll learn
-                how to analyze markets, manage risk, and capitalize on real opportunities.
+                Learn how SACCOs really work — from member contributions
+                to dividends, loans, and long-term wealth growth.
+                This course breaks everything down into simple, practical steps
+                so you can confidently use SACCOs to grow wealth safely,
+                consistently, and legally.
             </p>
         </div>
         <div class="md:w-1/2">
-            <img src="{{ asset('images/roadmap.png') }}"
-                 alt="Crypto Learning Roadmap"
+            <img src="{{ asset('images/sacco/roadmap.png') }}"
+                 alt="SACCO Wealth Roadmap"
                  class="rounded-2xl shadow-lg w-full">
         </div>
     </div>
 
-    {{-- Expert Mentorship --}}
+    {{-- Expert SACCO Guidance --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/mentor.png') }}"
-                 alt="Crypto Mentor"
+            <img src="{{ asset('images/sacco/expert.png') }}"
+                 alt="SACCO Investment Expert"
                  class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
             <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Learn from Proven Crypto Experts
+                Learn from Proven SACCO & Finance Experts
             </h3>
             <p class="text-gray-300">
-                Crypto is not about luck — it’s about understanding cycles, trends,
-                and human psychology. You’ll be guided by experienced crypto traders
-                who have navigated bull markets, bear markets, and volatility.
-                Learn how professionals think, manage emotions, and protect capital
-                while positioning for exponential upside.
+                SACCOs are one of the safest wealth-building vehicles — when used correctly.
+                You’ll learn from experts who understand SACCO structures,
+                dividend strategies, loan leveraging, and risk management.
+                No hype, no gambling — just smart, disciplined financial growth.
             </p>
         </div>
     </div>
 
-    {{-- Daily Support & Coaching --}}
+    {{-- Practical Guidance & Support --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/coaching.png') }}"
-                 alt="Crypto Coaching"
+            <img src="{{ asset('images/sacco/support.png') }}"
+                 alt="SACCO Support & Guidance"
                  class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
             <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Daily Guidance & Market Support
+                Practical Guidance & Ongoing Support
             </h3>
             <p class="text-gray-300">
-                The crypto market moves fast — and mistakes are costly.
-                That’s why you receive ongoing support, market insights,
-                and strategic guidance to help you stay disciplined and focused.
-                Ask questions, get clarity, and sharpen your execution
-                with support designed to keep you profitable long-term.
+                Choosing the right SACCO, understanding bylaws,
+                maximizing dividends, and using loans wisely
+                can make or break your financial future.
+                You’ll receive clear guidance and support to help you
+                make smart decisions and avoid common SACCO mistakes.
             </p>
         </div>
     </div>
 
-    {{-- Community --}}
+    {{-- SACCO Community --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/community.png') }}"
-                 alt="Crypto Community"
+            <img src="{{ asset('images/sacco/community.png') }}"
+                 alt="SACCO Community"
                  class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
             <h3 class="text-2xl font-bold text-gray-100 mb-4">
-                Next Level Africa Club Crypto Community
+                Wealth-Focused SACCO Community
             </h3>
             <p class="text-gray-300">
-                You’re not learning alone. Inside the Next Level Africa Club Crypto Campus,
-                you’ll connect with like-minded individuals focused on growth,
-                discipline, and financial freedom.
-                Share strategies, market insights, and experiences inside a community
-                built to help everyone win together.
+                Build wealth alongside disciplined, like-minded individuals
+                focused on long-term financial security.
+                Share experiences, SACCO opportunities, and real-life lessons
+                inside a supportive community designed for sustainable growth —
+                not shortcuts.
             </p>
         </div>
     </div>
@@ -282,48 +290,72 @@ WHY CHOOSE OUR CRYPTO COURSE
     <div class="text-center mt-12">
         <a href="{{ route('pricing') }}"
            class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
         <p class="text-gray-400 mt-4">
-            Trusted by thousands of students to master crypto safely
+            Trusted by thousands to build safe, long-term wealth through SACCOs
         </p>
     </div>
 
 </section>
 
+{{-- =========================
+TESTIMONIALS
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-10">
+    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">
+        What Our Members Say
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">
+                “I finally understand how to use SACCO loans properly.
+                I’ve acquired land and increased my savings consistently.”
+            </p>
+            <h4 class="text-gray-100 font-bold">Peter M., Kiambu</h4>
+        </div>
+
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">
+                “This program changed my mindset about money.
+                SACCOs are now my main wealth-building strategy.”
+            </p>
+            <h4 class="text-gray-100 font-bold">Grace W., Nairobi</h4>
+        </div>
+    </div>
+</section>
 
 {{-- =========================
 GET ACCESS & PRICING
 ========================= --}}
 <section class="max-w-7xl mx-auto py-20 px-6 text-center">
+
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
-        Get access to the best education platform for only KES 1,999
+        Get access for only KES 1,999
     </h2>
 
     <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
         <h3 class="text-2xl font-bold text-gray-100 mb-4">
-            Take Action: You need to act now.
+            Take Action — Build Wealth Safely
         </h3>
 
         <div class="text-4xl font-extrabold text-cyan-400 mb-2">
             KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
 
-        <div class="text-gray-300 mb-6">Forever</div>
-
         <ul class="space-y-2 text-left text-gray-300 mb-6">
-            <li>✔ Simple step-by-step tutorials</li>
-            <li>✔ Crypto trading strategies</li>
+            <li>✔ SACCO investment mastery</li>
+            <li>✔ Asset-based wealth strategies</li>
             <li>✔ Access to expert mentors</li>
-            <li>✔ Community chat groups</li>
-            <li>✔ Beginner friendly</li>
-            <li>✔ Risk management systems</li>
-            <li>✔ Cancel anytime</li>
-            <li>✔ Risk-free</li>
+            <li>✔ Community support</li>
+            <li>✔ Beginner-friendly</li>
+            <li>✔ Lifetime access</li>
         </ul>
 
-        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+        <a href="{{ route('pricing') }}"
+           class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Academy
         </a>
     </div>
 </section>
@@ -361,14 +393,14 @@ GET ACCESS & PRICING
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
                 Results vary depending on effort, consistency, and execution.
-                The Next Level Africa Club focuses on real skills, not shortcuts.
+                The Next Level Africa Academy focuses on real skills, not shortcuts.
             </div>
         </div>
 
         <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
             <button class="faq-question w-full flex justify-between items-center p-6 text-left">
                 <span class="text-lg font-semibold text-cyan-400">
-                    Do I need money once inside the Next Level Africa Club?
+                    Do I need money once inside Next Level Africa Academy?
                 </span>
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
@@ -409,7 +441,7 @@ GET ACCESS & PRICING
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
-                No. The Next Level Africa Club works globally.
+                No. Next Level Africa Academy works globally.
             </div>
         </div>
 

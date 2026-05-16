@@ -14,7 +14,7 @@
             <img
                 src="{{ asset('images/logo.png') }}"
                 class="h-14 mb-8"
-                alt="Next Level Africa Club"
+                alt="Next Level Africa Academy"
             >
 
             <h1 class="text-5xl font-extrabold text-white leading-tight mb-6">
@@ -110,7 +110,7 @@
                         <img
                             src="{{ asset('images/logo.png') }}"
                             class="h-12"
-                            alt="Next Level Africa Club"
+                            alt="Next Level Africa Academy"
                         >
                     </div>
 

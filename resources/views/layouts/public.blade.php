@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Next Level Africa')</title>
+    <title>@yield('title', 'Next Level Africa Academy')</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
@@ -112,7 +112,7 @@ body {
 
                     <img
                         src="{{ asset('images/synflowlogo2.jpeg') }}"
-                        alt="Next Level Africa"
+                        alt="Next Level Africa Academy"
                         class="h-12 w-auto object-contain"
                     >
                 </a>
@@ -125,32 +125,32 @@ body {
                         Home
                     </a>
 
-                    <a href="{{ route('about') }}"
+                    <a href="{{ route('crypto') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         Crypto
                     </a>
 
-                    <a href="{{ route('services') }}"
+                    <a href="{{ route('copywriting') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         Copywriting
                     </a>
 
-                    <a href="{{ route('pricing') }}"
+                    <a href="{{ route('ecommerce') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         E-Commerce
                     </a>
 
-                    <a href="{{ route('certificate.verify') }}"
+                    <a href="{{ route('saccos.page') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         SACCOs
                     </a>
 
-                    <a href="{{ route('careers') }}"
+                    <a href="{{ route('investments') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         Investments
                     </a>
 
-                    <a href="{{ route('partners.page') }}"
+                    <a href="{{ route('marketing') }}"
                        class="text-gray-300 hover:text-cyan-400 transition">
                         Marketing
                     </a>
@@ -176,7 +176,7 @@ body {
                     </a>
 
                     <!-- CTA -->
-                    <a href="{{ route('careers.apply') }}"
+                    <a href="{{ route('pricing') }}"
                        class="bg-cyan-400 hover:bg-cyan-300 text-black px-5 py-2 rounded-xl font-semibold transition text-sm shadow-lg shadow-cyan-500/20">
 
                         Join Now
@@ -237,32 +237,32 @@ body {
                                 Home
                             </a>
 
-                            <a href="{{ route('about') }}"
+                            <a href="{{ route('crypto') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 Crypto
                             </a>
 
-                            <a href="{{ route('services') }}"
+                            <a href="{{ route('copywriting') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 Copywriting
                             </a>
 
-                            <a href="{{ route('pricing') }}"
+                            <a href="{{ route('ecommerce') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 E-Commerce
                             </a>
 
-                            <a href="{{ route('certificate.verify') }}"
+                            <a href="{{ route('saccos.page') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 SACCOs
                             </a>
 
-                            <a href="{{ route('careers') }}"
+                            <a href="{{ route('investments') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 Investments
                             </a>
 
-                            <a href="{{ route('partners.page') }}"
+                            <a href="{{ route('marketing') }}"
                                class="text-gray-300 hover:text-cyan-400 transition">
                                 Marketing
                             </a>
@@ -282,7 +282,7 @@ body {
                                     WhatsApp
                                 </a>
 
-                                <a href="{{ route('pricing') }}"
+                                <a href="{{ route('ecommerce') }}"
                                    class="w-full text-center bg-cyan-400 hover:bg-cyan-300 text-black px-4 py-3 rounded-xl font-bold transition">
 
                                     Join Now
@@ -330,7 +330,7 @@ body {
                 <div>
 
                     <h3 class="text-xl font-bold text-white mb-4">
-                        Next Level Africa
+                        Next Level Africa Academy
                     </h3>
 
                     <p class="text-gray-400 leading-relaxed text-sm">
@@ -357,9 +357,9 @@ body {
                         </li>
 
                         <li>
-                            <a href="{{ route('pricing') }}"
+                            <a href="{{ route('ecommerce') }}"
                                class="text-gray-400 hover:text-cyan-400 transition">
-                                Pricing
+                                E-commerce
                             </a>
                         </li>
 
@@ -434,7 +434,7 @@ body {
             <div class="border-t border-gray-800 mt-12 pt-6 text-center">
 
                 <p class="text-sm text-gray-500">
-                    © {{ date('Y') }} Next Level Africa. All Rights Reserved.
+                    © {{ date('Y') }} Next Level Africa Academy. All Rights Reserved.
                 </p>
 
             </div>

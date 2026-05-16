@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'E-commerce Campus | Next Level Africa Club')
+@section('title', 'Crypto Campus | Next Level Africa Academy')
 
 @section('content')
 
@@ -10,10 +10,10 @@ HERO SECTION
 <section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
     <img src="{{ asset('images/logo.png') }}" alt="Elite Club Logo" class="mx-auto mb-4 w-24 h-24">
     <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
-        Copywriting Campus — Next Level Africa Club
+        Crypto Campus — Next Level Africa Academy
     </h1>
     <p class="text-gray-300 max-w-3xl mx-auto mb-6">
-        Learn the Secrets of Writing Profitable Copy, Whether You're a Beginner or an Experienced Copywriter.
+        Learn how to profit from cryptocurrency markets using proven strategies from experienced crypto professionals.
     </p>
     <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
         Get Started
@@ -21,13 +21,13 @@ HERO SECTION
 
     {{-- Video Placeholder --}}
     <div class="mt-8 max-w-4xl mx-auto">
-        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder1.jpg') }}">
-            <source src="{{ asset('videos/copywriting-intro.mp4') }}" type="video/mp4">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/crypto-placeholder.jpg') }}">
+            <source src="{{ asset('videos/crypto-intro.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-   {{-- SOCIAL PROOF --}}
+    {{-- SOCIAL PROOF --}}
         <p class="text-gray-400 mt-4">
             Join over
             <span class="text-cyan-400 font-semibold">
@@ -38,145 +38,200 @@ HERO SECTION
 </section>
 
 {{-- =========================
-INTRODUCTION / COPYWRITING COURSE
+INTRODUCTION / CRYPTO COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
-    {{-- Main Heading --}}
+
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
-        Master the Art of Copywriting with a pool of successful copywriters
+        Master Cryptocurrency with Proven Market Strategies
     </h2>
 
-    {{-- Intro Paragraph --}}
-    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-4">
-        Welcome to <strong>"Next Level Africa Copywriting Course"</strong> led by a pool of successful copywriters.
-
-    {{-- Why Copywriting --}}
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Why Copywriting?</h3>
-    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-4">
-        Because it’s more than just writing—it’s a strategic tool for success. Copywriting allows you to influence, persuade, and drive action in any business or venture.
+    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
+        Designed for Beginners & Advanced Traders
     </p>
 
-    {{-- Unleash Potential --}}
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Unleash Potential</h3>
+    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-6">
+        Welcome to <strong>"Next Level Africa Academy Crypto Course"</strong> —
+        a complete system designed to help you understand,
+        trade, and invest in cryptocurrency markets with confidence.
+    </p>
+
     <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-        Copywriting is the art of persuading your audience through words. Learn the secrets, strategies, and techniques that have earned millions and can help you generate substantial income, no matter your experience level.
+        This course delivers structured lessons, real-market analysis,
+        and practical strategies to help you avoid costly mistakes,
+        manage risk, and grow consistently in the crypto space.
     </p>
 
-    {{-- Join Now Button --}}
-    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
+        Why Crypto?
+    </h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+        Cryptocurrency offers unmatched financial opportunity,
+        borderless income, and the ability to participate in
+        the fastest-growing financial ecosystem in the world.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
+        Requirements
+    </h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
+        No prior experience required. A small starting capital is enough
+        to begin learning and applying the strategies taught.
+    </p>
+
+    <a href="{{ route('pricing') }}"
+       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
         Join Now
     </a>
 </section>
 
+{{-- =========================
+TAILORED CRYPTO ROADMAP
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 text-center">
+
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
+        Tailored Crypto Trading Roadmap
+    </h2>
+
+    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
+        Your Step-by-Step Path to Crypto Success
+    </p>
+
+    <p class="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-10">
+        Learn how to analyze crypto markets, identify profitable opportunities,
+        manage volatility, and build long-term digital wealth with confidence.
+    </p>
+
+    <a href="{{ route('pricing') }}"
+       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Join Next Level Africa Academy
+    </a>
+</section>
 
 {{-- =========================
 PERSONALIZED ROADMAP SECTION
 ========================= --}}
 <section class="bg-gray-900 py-20 px-6">
     <div class="max-w-5xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Personalized Copywriting Roadmap</h2>
-        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Success</p>
-        <p class="text-gray-300 mb-6">A Unlock the Power of Copywriting: Discover How to Attract High-Value Clients, Manage Copywriting Projects Efficiently, and Thrive in the Competitive World of SEO Copywriting”</p>
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Crypto Market Foundations</h2>
+        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Digital Assets</p>
+        <p class="text-gray-300 mb-6">
+            Learn how cryptocurrencies work, how blockchain powers them,
+            and how to profit responsibly in volatile markets.
+        </p>
         <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
-            Join Next Level Africa Club
+            Join Next Level Africa Academy
         </a>
     </div>
 
-    {{-- Steps with vertical cyan line --}}
     <div class="relative max-w-5xl mx-auto">
         <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
 
         <div class="space-y-16">
-            {{-- Step 1 --}}
+
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">01</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Find Your Copywriting Focus</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Crypto Fundamentals</h3>
                     <p class="text-gray-300">
-                        Embark on a comprehensive exploration into the core principles of copywriting. Gain a thorough understanding of the art and science behind crafting compelling content, discover the various writing styles, and learn why effective copy is pivotal in today’s digital marketing landscape.
+                        Understand blockchain, wallets, exchanges,
+                        and how crypto markets operate globally.
                     </p>
                 </div>
             </div>
 
-            {{-- Step 2 --}}
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">02</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Hone Your Skills</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Market Analysis</h3>
                     <p class="text-gray-300">
-                        Copywriting is an art that requires practice and continuous learning.This includes understanding the principles of persuasive writing, mastering SEO techniques, and staying up-to-date with the latest marketing trends. Consider taking courses, reading books, or learning from successful copywriters to improve your skills.
+                        Learn technical and fundamental analysis
+                        to identify high-probability trade setups.
                     </p>
                 </div>
             </div>
 
-            {{-- Step 3 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">03</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Build a Portfolio</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Risk Management</h3>
                     <p class="text-gray-300">
-                        A strong portfolio is crucial to showcase your skills and attract potential clients. This could include blog posts, sales pages, email campaigns, and more. Make sure your portfolio reflects the type of work you want to be hired for and demonstrates your ability to deliver results.
+                        Protect capital using position sizing,
+                        stop-loss strategies, and discipline.
                     </p>
                 </div>
             </div>
 
-            {{-- Step 4 --}}
             <div class="relative flex justify-end -mt-8">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">04</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Promote Your Services</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Advanced Strategies</h3>
                     <p class="text-gray-300">
-                    Once you’ve honed your skills and built a portfolio, it’s time to market your services. This could include creating a professional website, leveraging social media platforms, attending networking events, or using freelance platforms. Remember to highlight your unique selling proposition and why clients should choose you over others.
+                        Explore swing trading, trend trading,
+                        and portfolio diversification techniques.
                     </p>
                 </div>
             </div>
 
-            {{-- Step 5 --}}
             <div class="relative flex justify-start">
                 <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
                     <span class="text-cyan-400 font-bold text-xl">05</span>
-                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Deliver Quality Work</h3>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Long-Term Wealth</h3>
                     <p class="text-gray-300">
-                        After landing a client, it’s essential to deliver high-quality work. This means meeting deadlines, communicating effectively with the client, and always striving to exceed client expectations. By delivering quality work consistently, you can build long-term relationships with clients and get repeat business.
+                        Build sustainable crypto wealth through
+                        smart investing and market cycles.
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
 {{-- =========================
-WHY CHOOSE OUR COURSE
+WHY CHOOSE OUR CRYPTO COURSE
 ========================= --}}
 <section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
 
-    {{-- Master Ecommerce Success --}}
+    {{-- Step-by-Step Learning --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2 text-left">
-            <h2 class="text-3xl font-bold mb-4 text-gray-100">Step-by-Step Learning:</h2>
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">
+                Step-by-Step Crypto Mastery
+            </h2>
             <p class="text-gray-300 text-lg">
-                Unlock the Art of Copywriting with Our Comprehensive Course <br>
-                Our course takes you on a guided journey through the intricate world of copywriting. Divided into 11 comprehensive categories, it's designed as a step-by-step guide, ensuring that you not only learn but also master the art of persuasive writing. 
-                Whether you're a complete novice or an experienced wordsmith, our course offers valuable insights and techniques that can transform your writing skills.
+                Enter the world of cryptocurrency with clarity and confidence.
+                This course is structured into clearly defined modules that take you
+                from beginner fundamentals to advanced crypto strategies.
+                Whether you are new to crypto or already trading, you’ll learn
+                how to analyze markets, manage risk, and capitalize on real opportunities.
             </p>
         </div>
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Ecommerce Roadmap" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/roadmap.png') }}"
+                 alt="Crypto Learning Roadmap"
+                 class="rounded-2xl shadow-lg w-full">
         </div>
     </div>
 
-    {{-- Millionaire Professor --}}
+    {{-- Expert Mentorship --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Professor Andrew Bass" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/mentor.png') }}"
+                 alt="Crypto Mentor"
+                 class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Experienced Professionals:</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Learn from Proven Crypto Experts
+            </h3>
             <p class="text-gray-300">
-               Learn from a Copywriting Expert with Proven Success
-                Imagine having a mentor who truly understands the art and science of copywriting.
-                Gain guidance from an experienced professional who has successfully applied these skills to generate real results.
-                With deep knowledge and practical insights, this mentorship can empower you to achieve your goals and unlock the potential of persuasive writing.
+                Crypto is not about luck — it’s about understanding cycles, trends,
+                and human psychology. You’ll be guided by experienced crypto traders
+                who have navigated bull markets, bear markets, and volatility.
+                Learn how professionals think, manage emotions, and protect capital
+                while positioning for exponential upside.
             </p>
         </div>
     </div>
@@ -184,14 +239,20 @@ WHY CHOOSE OUR COURSE
     {{-- Daily Support & Coaching --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Daily Support & Coaching" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/coaching.png') }}"
+                 alt="Crypto Coaching"
+                 class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Daily Support and Coaching</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Daily Guidance & Market Support
+            </h3>
             <p class="text-gray-300">
-             Stay on Course with Our Daily Support and Expert Coaching.
-                Success in copywriting demands consistent effort and motivation. That's why we provide daily support and expert coaching to keep you on track. 
-                Our dedicated team is here to answer your questions, provide feedback, and offer valuable insights. With our guidance, you'll stay motivated, refine your skills, and conquer the world of copywriting one day at a time.
+                The crypto market moves fast — and mistakes are costly.
+                That’s why you receive ongoing support, market insights,
+                and strategic guidance to help you stay disciplined and focused.
+                Ask questions, get clarity, and sharpen your execution
+                with support designed to keep you profitable long-term.
             </p>
         </div>
     </div>
@@ -199,91 +260,73 @@ WHY CHOOSE OUR COURSE
     {{-- Community --}}
     <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2">
-            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Community" class="rounded-2xl shadow-lg w-full">
+            <img src="{{ asset('images/community.png') }}"
+                 alt="Crypto Community"
+                 class="rounded-2xl shadow-lg w-full">
         </div>
         <div class="md:w-1/2 text-left">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Community:</h3>
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Next Level Africa Club Crypto Community
+            </h3>
             <p class="text-gray-300">
-                Dive Deeper into Copywriting with Daily Nuggets of Wisdom.
-                In the ever-evolving world of copywriting, knowledge is power. Our course goes beyond the basics by offering daily industry insights and thought-provoking questions. 
-                These bite-sized nuggets of wisdom will expand your understanding of the copywriting field, helping you stay at the forefront of industry trends and strategies. It's the edge you need to thrive in this competitive landscape.
+                You’re not learning alone. Inside the Next Level Africa Club Crypto Campus,
+                you’ll connect with like-minded individuals focused on growth,
+                discipline, and financial freedom.
+                Share strategies, market insights, and experiences inside a community
+                built to help everyone win together.
             </p>
         </div>
     </div>
 
+    {{-- CTA --}}
     <div class="text-center mt-12">
-        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
-           Join Next Level Africa Club
+        <a href="{{ route('pricing') }}"
+           class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Academy
         </a>
-        <p class="text-gray-400 mt-4">We've taught over 5,862+ students how to grow their income</p>
+        <p class="text-gray-400 mt-4">
+            Trusted by thousands of students to master crypto safely
+        </p>
     </div>
+
 </section>
 
-
-{{-- =========================
-TESTIMONIALS
-========================= --}}
-<section class="max-w-6xl mx-auto py-20 px-6 space-y-10">
-    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">What Our Students Say</h2>
-
-    <div class="grid md:grid-cols-2 gap-8">
-        {{-- Testimonial 1 --}}
-        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">"This copywriting course completely changed how I sell online. I finally understood how to write offers that convert"</p>
-            <h4 class="text-gray-100 font-bold">Jane K., Nairobi</h4>
-        </div>
-        {{-- Testimonial 2 --}}
-        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <p class="text-gray-300 mb-4">"The copywriting strategies I learned gave me the clarity and confidence to launch my online store the right way. I now know how to communicate value and attract the right customers."</p>
-            <h4 class="text-gray-100 font-bold">David M., Mombasa</h4>
-        </div>
-    </div>
-</section>
 
 {{-- =========================
 GET ACCESS & PRICING
 ========================= --}}
 <section class="max-w-7xl mx-auto py-20 px-6 text-center">
-
-    {{-- Section Heading --}}
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
         Get access to the best education platform for only KES 1,999
     </h2>
 
-    {{-- Video --}}
-    <div class="mt-8 max-w-4xl mx-auto">
-        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
-            <source src="{{ asset('videos/ecommerce-access.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    {{-- Pricing Card --}}
     <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
-        <h3 class="text-2xl font-bold text-gray-100 mb-4">Take Action: You need to act now.</h3>
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">
+            Take Action: You need to act now.
+        </h3>
+
         <div class="text-4xl font-extrabold text-cyan-400 mb-2">
             KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
+
         <div class="text-gray-300 mb-6">Forever</div>
 
         <ul class="space-y-2 text-left text-gray-300 mb-6">
             <li>✔ Simple step-by-step tutorials</li>
-            <li>✔ 15 wealth creation methods</li>
-            <li>✔ Access to millionaire mentors</li>
+            <li>✔ Crypto trading strategies</li>
+            <li>✔ Access to expert mentors</li>
             <li>✔ Community chat groups</li>
-            <li>✔ No experience needed</li>
-            <li>✔ Custom-made learning</li>
+            <li>✔ Beginner friendly</li>
+            <li>✔ Risk management systems</li>
             <li>✔ Cancel anytime</li>
             <li>✔ Risk-free</li>
         </ul>
 
-        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition mb-2">
-            Join Next Level Africa Club
+        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Academy
         </a>
-        <p class="text-xs text-gray-400 mt-2">Lock in the price before it increases. Act First.</p>
     </div>
 </section>
-
 {{-- ========================= --}}
 {{-- FREQUENTLY ASKED QUESTIONS --}}
 {{-- ========================= --}}
@@ -318,14 +361,14 @@ GET ACCESS & PRICING
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
                 Results vary depending on effort, consistency, and execution.
-                Next Level Africa Club focuses on real skills, not shortcuts.
+                The Next Level Africa Club focuses on real skills, not shortcuts.
             </div>
         </div>
 
         <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
             <button class="faq-question w-full flex justify-between items-center p-6 text-left">
                 <span class="text-lg font-semibold text-cyan-400">
-                    Do I need money once inside Next Level Africa Club?
+                    Do I need money once inside the Next Level Africa Club?
                 </span>
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
@@ -366,7 +409,7 @@ GET ACCESS & PRICING
                 <span class="faq-icon text-2xl text-white">+</span>
             </button>
             <div class="faq-answer hidden px-6 pb-6 text-gray-400">
-                No. Next Level Africa Club works globally.
+                No. The Next Level Africa Club works globally.
             </div>
         </div>
 

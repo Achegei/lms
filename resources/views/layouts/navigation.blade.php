@@ -33,9 +33,9 @@
                 <!--<x-nav-link :href="route('leaderboards')" :active="request()->routeIs('leaderboards')" class="text-indigo-600 hover:text-red-700 transition-colors duration-200" class="text-indigo-600 hover:text-red-700 transition-colors duration-200">
                     {{ __('Leaderboards') }}
                 </x-nav-link> -->
-                <x-nav-link :href="route('auth-about')" :active="request()->routeIs('auth-about')" class="text-indigo-600 hover:text-red-700 transition-colors duration-200" class="text-indigo-600 hover:text-red-700 transition-colors duration-200">
+                <!--<x-nav-link :href="route('auth-about')" :active="request()->routeIs('auth-about')" class="text-indigo-600 hover:text-red-700 transition-colors duration-200" class="text-indigo-600 hover:text-red-700 transition-colors duration-200">
                     {{ __('About') }}
-                </x-nav-link>
+                </x-nav-link>-->
             </div>
 
             </div>

@@ -4,7 +4,7 @@
 <div class="min-h-screen bg-gray-50">
 <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-bold text-gray-900 mb-6">
-        Moose Loon AI Academy - Practical AI Skills for the Modern Workforce
+        Next Level Africa Academy - Practical AI, Finance & Digital Skills for the Modern African Workforce
     </h1>
 
     <!--@auth
@@ -24,7 +24,7 @@
         $user = auth()->user()?->fresh('courses');
     @endphp
 
-   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
     @foreach ($courses as $course)
         @php
             $isFreeCourse = (int) $course->id === 1;
@@ -46,11 +46,13 @@
         <div class="group bg-white border border-gray-100 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <div class="relative">
 
-    <img
-        src="{{ $course->image_url }}"
-        alt="{{ $course->title }}"
-        class="w-full h-52 object-cover group-hover:scale-105 transition duration-500 {{ !$hasAccess ? 'opacity-70' : '' }}"
-    >
+    <div class="aspect-[3/4] overflow-hidden">
+        <img
+            src="{{ $course->image_url }}"
+            alt="{{ $course->title }}"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+        >
+    </div>
 
     <div class="absolute top-4 left-4">
 
@@ -78,15 +80,15 @@
 
 </div>
 
-            <div class="p-5">
-            <h2 class="text-xl font-bold text-gray-900 leading-snug line-clamp-2">
+            <div class="p-3">
+            <h2 class="text-sm font-bold text-gray-900 leading-snug line-clamp-2">
                     {{ $course->title }}
             </h2>
 
-                <p class="mt-3 text-sm text-gray-500 leading-relaxed line-clamp-3">
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2">
                     {{ $course->description }}
                 </p>
-                <div class="flex items-center justify-between mt-5 text-sm">
+                <div class="flex items-center justify-between mt-3 text-sm">
 
                     <div class="flex items-center gap-2 text-gray-500">
 
@@ -116,21 +118,21 @@
 
                 @if ($isFreeCourse)
                     <a href="{{ route('classroom.show', $course->id) }}"
-                       class="inline-block w-full text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 mt-4">
+                       class="inline-block w-full text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 mt-3">
                         Start Course
                     </a>
 
                 @elseif ($hasAccess)
                     <a href="{{ route('classroom.show', $course->id) }}"
-                       class="mt-6 flex items-center justify-center w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+                       class="mt-4 flex items-center justify-center w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
                         Continue Course
                     </a>
                 @elseif ($pendingPayment)
-                    <div class="mt-6 flex items-center justify-center w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-gray-900 transition"">
+                    <div class="mt-4 flex items-center justify-center w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-gray-900 transition"">
                         ⏳ Your M-PESA payment is being processed
                     </div>
                 @else
-                    <form action="{{ route('purchase.course', $course->id) }}" method="POST" class="mt-4">
+                    <form action="{{ route('purchase.course', $course->id) }}" method="POST" class="mt-3">
                         @csrf
                         <button type="submit"
                                 class="inline-block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
@@ -142,7 +144,7 @@
         </div>
     @endforeach
 </div>
-<div class="mt-4 flex items-center justify-between text-xs text-gray-400">
+<div class="mt-3 flex items-center justify-between text-xs text-gray-400">
 
     <span>Beginner Friendly</span>
 
