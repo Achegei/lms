@@ -1,119 +1,463 @@
 @extends('layouts.public')
 
-@section('title', 'Meet the Team – Moose Loon AI Leadership')
+@section('title', 'Crypto Campus | Next Level Africa Club')
 
 @section('content')
 
-<!-- HEADER -->
-<section class="relative bg-gradient-to-r from-indigo-700 to-indigo-900 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-5xl font-extrabold leading-tight">Meet the Team Behind Moose Loon AI</h1>
-        <p class="mt-6 text-lg text-indigo-100 max-w-2xl mx-auto">
-            A global team of innovators driving the future of AI training and business automation.
+{{-- =========================
+HERO SECTION
+========================= --}}
+<section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
+    <img src="{{ asset('images/logo.png') }}" alt="Elite Club Logo" class="mx-auto mb-4 w-24 h-24">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
+        Crypto Campus — Next Level Africa Club
+    </h1>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-6">
+        Learn how to profit from cryptocurrency markets using proven strategies from experienced crypto professionals.
+    </p>
+    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Get Started
+    </a>
+
+    {{-- Video Placeholder --}}
+    <div class="mt-8 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/crypto-placeholder.jpg') }}">
+            <source src="{{ asset('videos/crypto-intro.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    {{-- SOCIAL PROOF --}}
+        <p class="text-gray-400 mt-4">
+            Join over
+            <span class="text-cyan-400 font-semibold">
+                5,862
+            </span>
+            members already inside
+        </p>
+</section>
+
+{{-- =========================
+INTRODUCTION / CRYPTO COURSE
+========================= --}}
+<section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
+
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
+        Master Cryptocurrency with Proven Market Strategies
+    </h2>
+
+    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
+        Designed for Beginners & Advanced Traders
+    </p>
+
+    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-6">
+        Welcome to <strong>"Next Level Africa Crypto Course"</strong> —
+        a complete system designed to help you understand,
+        trade, and invest in cryptocurrency markets with confidence.
+    </p>
+
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+        This course delivers structured lessons, real-market analysis,
+        and practical strategies to help you avoid costly mistakes,
+        manage risk, and grow consistently in the crypto space.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
+        Why Crypto?
+    </h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+        Cryptocurrency offers unmatched financial opportunity,
+        borderless income, and the ability to participate in
+        the fastest-growing financial ecosystem in the world.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">
+        Requirements
+    </h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
+        No prior experience required. A small starting capital is enough
+        to begin learning and applying the strategies taught.
+    </p>
+
+    <a href="{{ route('pricing') }}"
+       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Join Now
+    </a>
+</section>
+
+{{-- =========================
+TAILORED CRYPTO ROADMAP
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 text-center">
+
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
+        Tailored Crypto Trading Roadmap
+    </h2>
+
+    <p class="text-cyan-400 text-xl md:text-2xl font-semibold mb-6">
+        Your Step-by-Step Path to Crypto Success
+    </p>
+
+    <p class="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-10">
+        Learn how to analyze crypto markets, identify profitable opportunities,
+        manage volatility, and build long-term digital wealth with confidence.
+    </p>
+
+    <a href="{{ route('pricing') }}"
+       class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Join Next Level Africa Club
+    </a>
+</section>
+
+{{-- =========================
+PERSONALIZED ROADMAP SECTION
+========================= --}}
+<section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Crypto Market Foundations</h2>
+        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Digital Assets</p>
+        <p class="text-gray-300 mb-6">
+            Learn how cryptocurrencies work, how blockchain powers them,
+            and how to profit responsibly in volatile markets.
+        </p>
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
+
+        <div class="space-y-16">
+
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">01</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Crypto Fundamentals</h3>
+                    <p class="text-gray-300">
+                        Understand blockchain, wallets, exchanges,
+                        and how crypto markets operate globally.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">02</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Market Analysis</h3>
+                    <p class="text-gray-300">
+                        Learn technical and fundamental analysis
+                        to identify high-probability trade setups.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">03</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Risk Management</h3>
+                    <p class="text-gray-300">
+                        Protect capital using position sizing,
+                        stop-loss strategies, and discipline.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">04</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Advanced Strategies</h3>
+                    <p class="text-gray-300">
+                        Explore swing trading, trend trading,
+                        and portfolio diversification techniques.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">05</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Long-Term Wealth</h3>
+                    <p class="text-gray-300">
+                        Build sustainable crypto wealth through
+                        smart investing and market cycles.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- =========================
+WHY CHOOSE OUR CRYPTO COURSE
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
+
+    {{-- Step-by-Step Learning --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">
+                Step-by-Step Crypto Mastery
+            </h2>
+            <p class="text-gray-300 text-lg">
+                Enter the world of cryptocurrency with clarity and confidence.
+                This course is structured into clearly defined modules that take you
+                from beginner fundamentals to advanced crypto strategies.
+                Whether you are new to crypto or already trading, you’ll learn
+                how to analyze markets, manage risk, and capitalize on real opportunities.
+            </p>
+        </div>
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/roadmap.png') }}"
+                 alt="Crypto Learning Roadmap"
+                 class="rounded-2xl shadow-lg w-full">
+        </div>
+    </div>
+
+    {{-- Expert Mentorship --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/mentor.png') }}"
+                 alt="Crypto Mentor"
+                 class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Learn from Proven Crypto Experts
+            </h3>
+            <p class="text-gray-300">
+                Crypto is not about luck — it’s about understanding cycles, trends,
+                and human psychology. You’ll be guided by experienced crypto traders
+                who have navigated bull markets, bear markets, and volatility.
+                Learn how professionals think, manage emotions, and protect capital
+                while positioning for exponential upside.
+            </p>
+        </div>
+    </div>
+
+    {{-- Daily Support & Coaching --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/coaching.png') }}"
+                 alt="Crypto Coaching"
+                 class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Daily Guidance & Market Support
+            </h3>
+            <p class="text-gray-300">
+                The crypto market moves fast — and mistakes are costly.
+                That’s why you receive ongoing support, market insights,
+                and strategic guidance to help you stay disciplined and focused.
+                Ask questions, get clarity, and sharpen your execution
+                with support designed to keep you profitable long-term.
+            </p>
+        </div>
+    </div>
+
+    {{-- Community --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/community.png') }}"
+                 alt="Crypto Community"
+                 class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">
+                Next Level Africa Club Crypto Community
+            </h3>
+            <p class="text-gray-300">
+                You’re not learning alone. Inside the Next Level Africa Club Crypto Campus,
+                you’ll connect with like-minded individuals focused on growth,
+                discipline, and financial freedom.
+                Share strategies, market insights, and experiences inside a community
+                built to help everyone win together.
+            </p>
+        </div>
+    </div>
+
+    {{-- CTA --}}
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}"
+           class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+        <p class="text-gray-400 mt-4">
+            Trusted by thousands of students to master crypto safely
         </p>
     </div>
+
 </section>
 
-<!-- EXECUTIVE TEAM -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-extrabold text-indigo-700 text-center">Executive Team</h2>
-        <p class="text-center text-gray-600 mt-3">
-            Moose Loon AI is led by experienced and internationally diverse leaders from Canada.
-        </p>
 
-        <div class="mt-12 grid md:grid-cols-3 lg:grid-cols-3 gap-10">
-            @foreach([
-                ['name'=>'Alexandre Bouchard','role'=>'Founder & Chief Executive Officer (CEO)','img'=>'team1.jpg','desc'=>'Leads the global strategy and vision of Moose Loon AI, guiding innovation and expansion across Canada, East Africa, and beyond.'],
-                ['name'=>'Daniel McArthur','role'=>'Chief Operating Officer (COO)','img'=>'team2.jpg','desc'=>'Oversees operations, ensuring smooth execution and service excellence across all departments.'],
-                ['name'=>'Olivia Bennett','role'=>'Chief Marketing Officer (CMO)','img'=>'team3.jpg','desc'=>'Leads global marketing, brand development, and community growth across international markets.'],
-                ['name'=>'William Fraser','role'=>'Chief Technology Officer (CTO)','img'=>'team4.jpg','desc'=>'Directs engineering, system architecture, and AI automation development.'],
-                ['name'=>'Amélie Gagnon','role'=>'Chief Financial Officer (CFO)','img'=>'team5.jpg','desc'=>'Manages corporate finance, budgeting, and international compliance.'],
-                ['name'=>'Nathan Clarke','role'=>'Chief Sales Officer (CSO)','img'=>'team6.jpg','desc'=>'Leads sales teams, partnerships, and revenue expansion globally.']
-            ] as $member)
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-1">
-                <div class="w-32 h-32 mx-auto rounded-full ring-4 ring-indigo-700 overflow-hidden">
-                    <img src="{{ asset('images/'.$member['img']) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover">
-                </div>
-                <h4 class="mt-4 text-xl font-bold text-gray-900 text-center">{{ $member['name'] }}</h4>
-                <p class="text-sm text-gray-500 text-center">{{ $member['role'] }}</p>
-                <p class="mt-3 text-gray-600 text-center text-sm">{{ $member['desc'] }}</p>
-            </div>
-            @endforeach
+{{-- =========================
+GET ACCESS & PRICING
+========================= --}}
+<section class="max-w-7xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
+        Get access to the best education platform for only KES 1,999
+    </h2>
+
+    <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">
+            Take Action: You need to act now.
+        </h3>
+
+        <div class="text-4xl font-extrabold text-cyan-400 mb-2">
+            KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
+
+        <div class="text-gray-300 mb-6">Forever</div>
+
+        <ul class="space-y-2 text-left text-gray-300 mb-6">
+            <li>✔ Simple step-by-step tutorials</li>
+            <li>✔ Crypto trading strategies</li>
+            <li>✔ Access to expert mentors</li>
+            <li>✔ Community chat groups</li>
+            <li>✔ Beginner friendly</li>
+            <li>✔ Risk management systems</li>
+            <li>✔ Cancel anytime</li>
+            <li>✔ Risk-free</li>
+        </ul>
+
+        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+    </div>
+</section>
+{{-- ========================= --}}
+{{-- FREQUENTLY ASKED QUESTIONS --}}
+{{-- ========================= --}}
+<section class="w-full max-w-6xl mb-32 mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-4 max-w-4xl mx-auto" id="faqAccordion">
+
+        {{-- FAQ ITEM --}}
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Is the program open for everyone?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. This program is designed for motivated individuals who are willing
+                to learn, apply, and follow proven systems step by step.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    How quickly will I make my money back?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Results vary depending on effort, consistency, and execution.
+                The Next Level Africa Club focuses on real skills, not shortcuts.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Do I need money once inside the Next Level Africa Club?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No large capital is required. Many methods are beginner-friendly.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Does my age really matter?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. Commitment and consistency matter more than age.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I know nothing about the skills you teach. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Not at all. Everything is taught from the ground up.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I live in X country. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. The Next Level Africa Club works globally.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I don’t have a lot of time available. Can I still apply?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. Training is self-paced and flexible.
+            </div>
+        </div>
+
+    </div>
+
+    {{-- CTA Button --}}
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Now
+        </a>
     </div>
 </section>
 
-<!-- SENIOR LEADERSHIP -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-extrabold text-indigo-700 text-center">Senior Leadership</h2>
-        <p class="text-center text-gray-600 mt-3">Our directors lead strategic operations worldwide.</p>
+{{-- =========================
+FAQ Accordion Script
+========================= --}}
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = faqItem.querySelector('.faq-icon');
 
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            @foreach([
-                ['name'=>'Michael Anderson','role'=>'Director of AI Business Solutions','img'=>'team7.jpg','desc'=>'Leads delivery of automation, chatbots, and enterprise AI workflows.'],
-                ['name'=>'Chloé Tremblay','role'=>'Director of AI Training & Curriculum','img'=>'team8.jpg','desc'=>'Oversees AI courses, certifications, and instructor quality.'],
-                ['name'=>'Logan Marshall','role'=>'Director of Operations & Compliance','img'=>'team9.jpg','desc'=>'Ensures smooth coordination, compliance, and internal processes.'],
-                ['name'=>'Sophie Parker','role'=>'Director of International Expansion','img'=>'team10.jpg','desc'=>'Leads African, European, and Middle Eastern expansion strategies.'],
-                ['name'=>'Ethan Brooks','role'=>'Director of Community & Student Success','img'=>'team11.jpg','desc'=>'Manages student communities, support systems, and engagement.'],
-                ['name'=>'Isabelle Roy','role'=>'Director of Digital Strategy & Media','img'=>'team12.jpg','desc'=>'Leads content creation, digital media, and online brand strategy.']
-            ] as $director)
-            <div class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1">
-                <div class="w-28 h-28 mx-auto rounded-full ring-2 ring-indigo-600 overflow-hidden">
-                    <img src="{{ asset('images/'.$director['img']) }}" alt="{{ $director['name'] }}" class="w-full h-full object-cover">
-                </div>
-                <h4 class="mt-4 text-lg font-bold text-gray-900 text-center">{{ $director['name'] }}</h4>
-                <p class="text-sm text-gray-500 text-center">{{ $director['role'] }}</p>
-                <p class="mt-3 text-gray-600 text-center text-sm">{{ $director['desc'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+        const isOpen = !answer.classList.contains('hidden');
 
-    <!-- NORTH AMERICAN SALES TEAM IMAGE -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold text-indigo-700 mb-6">Moose Loon AI Engineers</h3>
+        // Close all others (accordion behavior)
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
 
-            <div class="flex justify-center">
-                <div class="w-full max-w-4xl">
-                    <img src="{{ asset('images/north-american-sales.jpg') }}" alt="North American Sales Team" class="w-full rounded-xl shadow-lg object-cover">
-                    <p class="mt-4 text-gray-600 text-sm"> Our engineers driving innovation and growth across the continent and in Africa.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!-- GLOBAL OFFICES -->
-<section class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-extrabold text-indigo-700">Global Offices</h2>
-
-        <div class="mt-12 grid md:grid-cols-2 gap-10">
-            <div class="bg-white p-8 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900">🇨🇦 Toronto Headquarters</h3>
-                <p class="mt-3 text-gray-600">Executive, Technology & North American Division
-                Serving Canada & the United States <br>
-                📍 Moose Loon AI Solutions – Canada HQ
-                15710 Beaumaris Rd NW, Edmonton AB T5X 5E2, Canada<br>
-                Website: www.mooseloonai.ca</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900">🇰🇪 Nairobi Headquarters</h3>
-                <p class="mt-3 text-gray-600">AI Business Solutions & East Africa Sales Division
-                Serving East Africa <br>
-                📍 Moose Loon AI Solutions – Nairobi HQ <br>
-                2nd Floor, Vision Plaza <br>
-                Mombasa Road<br>
-                Nairobi, Kenya <br>
-                Website: www.mooseloonai.ca</p>
-            </div>
-        </div>
-
-    </div>
-</section>
+        // Toggle current
+        if (!isOpen) {
+            answer.classList.remove('hidden');
+            icon.textContent = '−';
+        }
+    });
+});
+</script>
 
 @endsection

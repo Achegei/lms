@@ -1,491 +1,416 @@
 @extends('layouts.public')
 
-@section('title', 'AI & Automation Curriculum - Moose Loon AI Academy')
+@section('title', 'E-commerce Campus | Next Level Africa Club')
 
 @section('content')
 
-<!-- HERO -->
-<section class="relative overflow-hidden bg-white">
+{{-- =========================
+HERO SECTION
+========================= --}}
+<section class="text-center max-w-7xl mx-auto py-28 px-6">
+    <img src="{{ asset('images/logo.png') }}" alt="Next Level Africa Club Logo" class="mx-auto mb-6 w-24 h-24">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-100 mb-4">
+        E-commerce Campus
+    </h1>
+    <p class="text-gray-400 max-w-3xl mx-auto mb-8">
+        Access the strategies and talent that power the biggest e-commerce success stories and achieve your goals faster.
+    </p>
+    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Get Started
+    </a>
 
-    <div class="absolute top-0 left-0 w-full h-full">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40"></div>
+    {{-- Video Placeholder --}}
+    <div class="mt-12 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
+            <source src="{{ asset('videos/ecommerce-intro.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-    <div class="relative container mx-auto px-6 py-24">
-
-        <div class="max-w-4xl mx-auto text-center">
-
-            <div class="inline-flex items-center px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 font-semibold text-sm">
-                FUTURE-READY AI EDUCATION
-            </div>
-
-            <h1 class="mt-8 text-5xl sm:text-6xl font-black tracking-tight text-gray-900 leading-tight">
-                Artificial Intelligence <br>
-                & Automation Systems
-            </h1>
-
-            <p class="mt-8 text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Learn practical Artificial Intelligence, AI Agents, automation systems, workflow design, APIs, and real-world AI deployment through a flexible online learning experience designed for modern learners.
-            </p>
-
-            <div class="mt-10 flex flex-wrap justify-center gap-4">
-
-                <div class="px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 font-medium">
-                    100% Online
-                </div>
-
-                <div class="px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 font-medium">
-                    Self-Paced Learning
-                </div>
-
-                <div class="px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 font-medium">
-                    Beginner Friendly
-                </div>
-
-                <div class="px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 font-medium">
-                    Real-World Projects
-                </div>
-
-                <div class="px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 font-medium">
-                    Practical AI Skills
-                </div>
-
-            </div>
-
-            <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-
-                <a href="{{route('contactus')}}"
-                   class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition shadow-xl shadow-indigo-200">
-                    Make an Enquiry
-                </a>
-
-                <a href="#curriculum"
-                   class="inline-flex items-center justify-center px-8 py-4 rounded-2xl border border-gray-300 bg-white text-gray-800 font-semibold hover:bg-gray-50 transition">
-                    Explore Curriculum
-                </a>
-
-            </div>
-
-            <p class="mt-6 text-sm text-gray-500">
-                Want to know the program investment or enrollment process?
-                <a href="{{route('contactus')}}" class="text-indigo-600 font-semibold hover:underline">
-                    Send us an enquiry
-                </a>
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- WHY SECTION -->
-<section class="py-24 bg-gray-50">
-
-    <div class="container mx-auto px-6">
-
-        <div class="max-w-3xl mx-auto text-center">
-
-            <h2 class="text-4xl font-black text-gray-900">
-                Built for Modern Learners
-            </h2>
-
-            <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                Our learning experience is designed to be flexible, affordable, practical, and career-focused — allowing students to build real AI skills without traditional learning limitations.
-            </p>
-
-        </div>
-
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-
-            <!-- CARD -->
-            <div class="group bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-
-                <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg">
-                    🌍
-                </div>
-
-                <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                    Learn From Anywhere
-                </h3>
-
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    Study online from anywhere at your own pace using structured lessons and guided practical learning.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-            <div class="group bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-
-                <div class="w-16 h-16 rounded-2xl bg-cyan-600 text-white flex items-center justify-center text-2xl shadow-lg">
-                    💡
-                </div>
-
-                <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                    Practical Skills
-                </h3>
-
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    Build AI workflows, automation systems, AI chat agents, integrations, and portfolio-ready projects.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-            <div class="group bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-
-                <div class="w-16 h-16 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl shadow-lg">
-                    🚀
-                </div>
-
-                <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                    Career Focused
-                </h3>
-
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    Learn modern AI skills relevant to freelancing, remote work, consulting, entrepreneurship, and digital careers.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-            <div class="group bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-
-                <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-lg">
-                    ⏱️
-                </div>
-
-                <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                    Flexible Learning
-                </h3>
-
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    No rigid schedules. Learn progressively through guided modules designed for busy students and professionals.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PROGRAM OVERVIEW -->
-<section class="py-24 bg-white">
-
-    <div class="container mx-auto px-6">
-
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-            <div>
-
-                <div class="inline-flex px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 font-semibold text-sm">
-                    PROGRAM OVERVIEW
-                </div>
-
-                <h2 class="mt-6 text-4xl font-black text-gray-900 leading-tight">
-                    Learn AI Beyond Theory
-                </h2>
-
-                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                    This program is designed to equip learners with practical and industry-relevant skills in Artificial Intelligence, workflow automation, AI systems, APIs, integrations, and intelligent business automation.
-                </p>
-
-                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                    Students progress from foundational AI concepts to advanced automation workflows and real-world deployment projects.
-                </p>
-
-                <div class="mt-10 space-y-4">
-
-                    <div class="flex items-start gap-4">
-                        <div class="text-indigo-600 font-bold text-xl">✓</div>
-                        <p class="text-gray-700">Build AI-powered workflows and intelligent systems</p>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="text-indigo-600 font-bold text-xl">✓</div>
-                        <p class="text-gray-700">Learn APIs, integrations, automation logic, and AI tools</p>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="text-indigo-600 font-bold text-xl">✓</div>
-                        <p class="text-gray-700">Develop portfolio-ready practical projects</p>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="text-indigo-600 font-bold text-xl">✓</div>
-                        <p class="text-gray-700">Gain skills relevant to modern AI careers and business automation</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- SIDE STATS -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                    <h3 class="text-5xl font-black text-indigo-600">
-                        19
-                    </h3>
-                    <p class="mt-3 text-gray-700 font-medium">
-                        Structured Learning Modules
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                    <h3 class="text-5xl font-black text-cyan-600">
-                        8
-                    </h3>
-                    <p class="mt-3 text-gray-700 font-medium">
-                        Weeks Duration
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                    <h3 class="text-5xl font-black text-purple-600">
-                        100%
-                    </h3>
-                    <p class="mt-3 text-gray-700 font-medium">
-                        Practical & Hands-On
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                    <h3 class="text-5xl font-black text-emerald-600">
-                        Online
-                    </h3>
-                    <p class="mt-3 text-gray-700 font-medium">
-                        Flexible Learning Experience
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CURRICULUM -->
-<section id="curriculum" class="py-24 bg-gray-50">
-
-    <div class="container mx-auto px-6">
-
-        <div class="text-center max-w-3xl mx-auto">
-
-            <h2 class="text-4xl font-black text-gray-900">
-                Curriculum Breakdown
-            </h2>
-
-            <p class="mt-6 text-lg text-gray-600">
-                Structured modules designed to progressively build practical AI and automation competency.
-            </p>
-
-        </div>
-
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-            <!-- CARD -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition">
-                <div class="text-indigo-600 font-bold text-sm">MODULES 1 – 4</div>
-                <h3 class="mt-4 text-2xl font-bold text-gray-900">
-                    AI Foundations
-                </h3>
-
-                <ul class="mt-6 space-y-3 text-gray-700">
-                    <li>✓ Introduction to Artificial Intelligence</li>
-                    <li>✓ AI in Business & Industry</li>
-                    <li>✓ Prompt Engineering Fundamentals</li>
-                    <li>✓ Markdown for AI Communication</li>
-                </ul>
-            </div>
-
-            <!-- CARD -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition">
-                <div class="text-cyan-600 font-bold text-sm">MODULES 5 – 8</div>
-                <h3 class="mt-4 text-2xl font-bold text-gray-900">
-                    Automation & APIs
-                </h3>
-
-                <ul class="mt-6 space-y-3 text-gray-700">
-                    <li>✓ No-Code Automation Tools</li>
-                    <li>✓ APIs & System Integrations</li>
-                    <li>✓ Working with External Tools</li>
-                    <li>✓ Large Language Models (LLMs)</li>
-                </ul>
-            </div>
-
-            <!-- CARD -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition">
-                <div class="text-purple-600 font-bold text-sm">MODULES 9 – 12</div>
-                <h3 class="mt-4 text-2xl font-bold text-gray-900">
-                    Workflow Systems
-                </h3>
-
-                <ul class="mt-6 space-y-3 text-gray-700">
-                    <li>✓ Error Handling & Debugging</li>
-                    <li>✓ Automation with n8n</li>
-                    <li>✓ Building AI Workflows</li>
-                    <li>✓ Webhooks & Real-Time Automation</li>
-                </ul>
-            </div>
-
-            <!-- CARD -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition">
-                <div class="text-pink-600 font-bold text-sm">MODULES 13 – 16</div>
-                <h3 class="mt-4 text-2xl font-bold text-gray-900">
-                    AI Agents & Integrations
-                </h3>
-
-                <ul class="mt-6 space-y-3 text-gray-700">
-                    <li>✓ Agentic AI Workflows</li>
-                    <li>✓ AI Chat Agents</li>
-                    <li>✓ WhatsApp AI Agents</li>
-                    <li>✓ CRM Integration & Data Logging</li>
-                </ul>
-            </div>
-
-            <!-- CARD -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition">
-                <div class="text-emerald-600 font-bold text-sm">MODULES 17 – 19</div>
-                <h3 class="mt-4 text-2xl font-bold text-gray-900">
-                    Projects & Career Skills
-                </h3>
-
-                <ul class="mt-6 space-y-3 text-gray-700">
-                    <li>✓ Final AI System Project</li>
-                    <li>✓ Client Delivery Skills</li>
-                    <li>✓ Freelancing & Consulting</li>
-                    <li>✓ Real-World AI Applications</li>
-                </ul>
-            </div>
-
-            <!-- CARD -->
-            <div class="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 text-white shadow-xl">
-
-                <div class="text-sm font-bold text-indigo-100">
-                    CERTIFICATION
-                </div>
-
-                <h3 class="mt-4 text-3xl font-black">
-                    Certificate Awarded
-                </h3>
-
-                <p class="mt-6 text-indigo-100 leading-relaxed">
-                    Students who successfully complete all modules and the final project receive:
-                </p>
-
-                <div class="mt-6 text-xl font-bold">
-                    Certificate in Artificial Intelligence & Automation Systems
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- LEARNING OUTCOMES -->
-<section class="py-24 bg-white">
-
-    <div class="container mx-auto px-6">
-
-        <div class="text-center max-w-3xl mx-auto">
-
-            <h2 class="text-4xl font-black text-gray-900">
-                What Students Will Be Able To Do
-            </h2>
-
-            <p class="mt-6 text-lg text-gray-600">
-                Graduates develop practical skills applicable to real business environments and modern digital work.
-            </p>
-
-        </div>
-
-        <div class="mt-16 grid md:grid-cols-2 gap-8">
-
-            <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                <h3 class="text-2xl font-bold text-gray-900">
-                    Technical Skills
-                </h3>
-
-                <ul class="mt-6 space-y-4 text-gray-700">
-                    <li>✓ Build AI-powered automation systems</li>
-                    <li>✓ Design AI chat agents and workflows</li>
-                    <li>✓ Integrate APIs and external tools</li>
-                    <li>✓ Deploy intelligent automation systems</li>
-                    <li>✓ Build WhatsApp AI workflows</li>
-                    <li>✓ Create production-ready AI systems</li>
-                </ul>
-            </div>
-
-            <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-                <h3 class="text-2xl font-bold text-gray-900">
-                    Career & Business Skills
-                </h3>
-
-                <ul class="mt-6 space-y-4 text-gray-700">
-                    <li>✓ Deliver AI solutions for businesses</li>
-                    <li>✓ Conduct client discovery sessions</li>
-                    <li>✓ Package AI automation services</li>
-                    <li>✓ Build freelance-ready portfolios</li>
-                    <li>✓ Understand modern AI business systems</li>
-                    <li>✓ Apply AI to real-world business problems</li>
-                </ul>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- FINAL CTA -->
-<section class="relative overflow-hidden bg-gray-900 py-24 text-white">
-
-    <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full blur-3xl opacity-20"></div>
-
-    <div class="relative container mx-auto px-6 text-center">
-
-        <h2 class="text-5xl font-black leading-tight">
-            Start Your AI Journey
-        </h2>
-
-        <p class="mt-8 text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Flexible online learning designed to help you build practical AI skills, real-world automation systems, and future-ready digital capabilities.
+    {{-- SOCIAL PROOF --}}
+        <p class="text-gray-400 mt-4">
+            Join over
+            <span class="text-cyan-400 font-semibold">
+                5,862
+            </span>
+            members already inside
         </p>
+</section>
 
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+{{-- =========================
+CHALLENGES / SERVICES SECTION
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-4xl font-extrabold text-gray-100 mb-12">
+        We know that growing an ecommerce business is a daunting task
+    </h2>
 
-            <a href="{{route('contactus')}}"
-               class="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-white text-gray-900 font-bold hover:bg-gray-100 transition">
-                Make an Enquiry
-            </a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 justify-items-center">
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/research.png') }}" alt="Research" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Research</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/branding.png') }}" alt="Branding" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Branding</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/paid-traffic.png') }}" alt="Paid Traffic" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Paid Traffic</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/organic-traffic.png') }}" alt="Organic Traffic" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Organic Traffic</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/icons/conversion-rate-optimization.png') }}" alt="Conversion Rate Optimization" class="w-20 h-20 mb-4">
+            <span class="text-lg font-medium text-cyan-300">Conversion Rate Optimization</span>
+        </div>
+    </div>
+</section>
 
-            <a href="#curriculum"
-               class="inline-flex items-center justify-center px-10 py-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur text-white font-semibold hover:bg-white/20 transition">
-                View Curriculum
-            </a>
+{{-- =========================
+PERSONALIZED ROADMAP SECTION
+========================= --}}
+<section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Personalized Ecommerce Roadmap</h2>
+        <p class="text-gray-400 mb-6">A Step-by-Step Guide to Success</p>
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+    </div>
 
+    {{-- Steps with vertical cyan line --}}
+    <div class="relative max-w-5xl mx-auto">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
+
+        <div class="space-y-16">
+            {{-- Step 1 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">01</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Niche Market & Niche Research</h3>
+                    <p class="text-gray-300">
+                        Start by pinpointing the industries or types of businesses you’re most interested in writing for. Specialize to increase your value.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 2 --}}
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">02</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Million $$ Product</h3>
+                    <p class="text-gray-300">
+                        Find a winning product by mastering persuasive writing, SEO, and marketing trends.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 3 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">03</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Branding</h3>
+                    <p class="text-gray-300">
+                        Build a strong portfolio showcasing blog posts, email campaigns, sales pages, and measurable results.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 4 --}}
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">04</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">E-commerce Store Setup</h3>
+                    <p class="text-gray-300">
+                        Create a professional website, leverage social media, freelance platforms, and highlight your unique selling proposition.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 5 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">05</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Traffic: Paid & Organic</h3>
+                    <p class="text-gray-300">
+                        Deliver high-quality work, communicate effectively, and build long-term client relationships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- =========================
+WHY CHOOSE OUR COURSE
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
+
+    {{-- Master Ecommerce Success --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">Master Ecommerce Success: Transform Your Online Business</h2>
+            <p class="text-gray-300 text-lg">
+                Our course is your gateway to unlocking the secrets of successful ecommerce. With 11 in-depth categories, it's a structured roadmap for beginners and experienced entrepreneurs.
+            </p>
+        </div>
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Ecommerce Roadmap" class="rounded-2xl shadow-lg w-full">
+        </div>
+    </div>
+
+    {{-- Millionaire Professor --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Professor Andrew Bass" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Learn from an Experienced Ecommerce Mentor</h3>
+            <p class="text-gray-300">
+                Imagine learning from a mentor who deeply understands ecommerce and has successfully applied proven strategies in real-world businesses. Gain practical knowledge, insights, and guidance designed to help you build sustainable income and achieve your goals through ecommerce.
+            </p>
+        </div>
+    </div>
+
+    {{-- Daily Support & Coaching --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Daily Support & Coaching" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Daily Support and Coaching</h3>
+            <p class="text-gray-300">
+                Our team provides daily support and expert coaching to keep you motivated, enhance skills, and conquer the ecommerce world one step at a time.
+            </p>
+        </div>
+    </div>
+
+    {{-- Community --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Community" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Community: Dive Deeper into Ecommerce</h3>
+            <p class="text-gray-300">
+                Daily insights, thought-provoking questions, and a supportive network to help you thrive in the ecommerce landscape.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+        <p class="text-gray-400 mt-4">
+            We have taught over
+            <span class="text-cyan-400 font-semibold">
+                5,862
+            </span>
+            students already
+        </p>
+    </div>
+</section>
+
+
+{{-- =========================
+TESTIMONIALS
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-10">
+    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">What Our Students Say</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        {{-- Testimonial 1 --}}
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">"This course completely transformed my ecommerce business! I tripled my revenue in 3 months."</p>
+            <h4 class="text-gray-100 font-bold">Jane K., Nairobi</h4>
+        </div>
+        {{-- Testimonial 2 --}}
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">"The strategies taught in Next Level Africa Club gave me the confidence to launch my online store successfully."</p>
+            <h4 class="text-gray-100 font-bold">David M., Mombasa</h4>
+        </div>
+    </div>
+</section>
+
+{{-- =========================
+GET ACCESS & PRICING
+========================= --}}
+<section class="max-w-7xl mx-auto py-20 px-6 text-center">
+
+    {{-- Section Heading --}}
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
+        Get access to the best education platform for only KES 1,999
+    </h2>
+
+    {{-- Video --}}
+    <div class="mt-8 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
+            <source src="{{ asset('videos/ecommerce-access.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    {{-- Pricing Card --}}
+    <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">Take Action: You need to act now.</h3>
+        <div class="text-4xl font-extrabold text-cyan-400 mb-2">
+            KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
+        </div>
+        <div class="text-gray-300 mb-6">Forever</div>
+
+        <ul class="space-y-2 text-left text-gray-300 mb-6">
+            <li>✔ Simple step-by-step tutorials</li>
+            <li>✔ 15 wealth creation methods</li>
+            <li>✔ Access to millionaire mentors</li>
+            <li>✔ Community chat groups</li>
+            <li>✔ No experience needed</li>
+            <li>✔ Custom-made learning</li>
+            <li>✔ Cancel anytime</li>
+            <li>✔ Risk-free</li>
+        </ul>
+
+        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition mb-2">
+            Join Next Level Africa Club
+        </a>
+        <p class="text-xs text-gray-400 mt-2">Lock in the price before it increases. Act First.</p>
+    </div>
+</section>
+
+{{-- ========================= --}}
+{{-- FREQUENTLY ASKED QUESTIONS --}}
+{{-- ========================= --}}
+<section class="w-full max-w-6xl mb-32 mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-4 max-w-4xl mx-auto" id="faqAccordion">
+
+        {{-- FAQ ITEM --}}
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Is the program open for everyone?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. This program is designed for motivated individuals who are willing
+                to learn, apply, and follow proven systems step by step.
+            </div>
         </div>
 
-        <p class="mt-8 text-sm text-gray-400">
-            Want to know the program investment, enrollment process, or certification details?
-        </p>
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    How quickly will I make my money back?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Results vary depending on effort, consistency, and execution.
+                Next Level Africa Club focuses on real skills, not shortcuts.
+            </div>
+        </div>
 
-        <p class="mt-2 text-indigo-300 font-semibold">
-            Send us an enquiry through the contact form and our team will guide you.
-        </p>
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Do I need money once inside the Next Level Africa Club?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No large capital is required. Many methods are beginner-friendly.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Does my age really matter?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. Commitment and consistency matter more than age.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I know nothing about the skills you teach. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Not at all. Everything is taught from the ground up.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I live in X country. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. Next Level Africa Club works globally.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I don’t have a lot of time available. Can I still apply?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. Training is self-paced and flexible.
+            </div>
+        </div>
 
     </div>
 
+    {{-- CTA Button --}}
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Now
+        </a>
+    </div>
 </section>
+
+{{-- =========================
+FAQ Accordion Script
+========================= --}}
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = faqItem.querySelector('.faq-icon');
+
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Close all others (accordion behavior)
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+        // Toggle current
+        if (!isOpen) {
+            answer.classList.remove('hidden');
+            icon.textContent = '−';
+        }
+    });
+});
+</script>
 
 @endsection

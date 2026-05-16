@@ -1,342 +1,420 @@
 @extends('layouts.public')
 
-@section('title', 'Services - MooseLoon AI Academy')
+@section('title', 'E-commerce Campus | Next Level Africa Club')
 
 @section('content')
 
-<!-- HERO SECTION -->
-<section class="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-indigo-900 to-indigo-700 py-24">
-    <div class="absolute inset-0 opacity-20">
-        <div class="absolute top-0 left-0 w-72 h-72 bg-indigo-400 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400 rounded-full blur-3xl"></div>
+{{-- =========================
+HERO SECTION
+========================= --}}
+<section class="text-center max-w-7xl mx-auto pt-20 pb-16 px-6">
+    <img src="{{ asset('images/logo.png') }}" alt="Elite Club Logo" class="mx-auto mb-4 w-24 h-24">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-3">
+        Copywriting Campus — Next Level Africa Club
+    </h1>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-6">
+        Learn the Secrets of Writing Profitable Copy, Whether You're a Beginner or an Experienced Copywriter.
+    </p>
+    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Get Started
+    </a>
+
+    {{-- Video Placeholder --}}
+    <div class="mt-8 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder1.jpg') }}">
+            <source src="{{ asset('videos/copywriting-intro.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-    <div class="relative container mx-auto px-6 text-center">
-        <span class="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-indigo-100 ring-1 ring-white/20 backdrop-blur">
-            AI Education • Automation • AI Agents • Career Skills
-        </span>
-
-        <h1 class="mt-8 text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Build Real AI Skills With
-            <span class="bg-gradient-to-r from-cyan-300 to-indigo-200 bg-clip-text text-transparent">
-                MooseLoon AI Academy
+   {{-- SOCIAL PROOF --}}
+        <p class="text-gray-400 mt-4">
+            Join over
+            <span class="text-cyan-400 font-semibold">
+                5,862
             </span>
-        </h1>
-
-        <p class="mt-8 max-w-3xl mx-auto text-lg md:text-xl text-indigo-100 leading-relaxed">
-            We train students, professionals, and businesses in practical Artificial Intelligence,
-            AI agents, workflow automation, APIs, prompt engineering, and no-code systems that solve real-world problems.
+            members already inside
         </p>
+</section>
 
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-indigo-700 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-                Enroll or Book Consultation
-            </a>
+{{-- =========================
+INTRODUCTION / COPYWRITING COURSE
+========================= --}}
+<section class="max-w-6xl mx-auto pt-8 pb-20 px-6 text-center">
+    {{-- Main Heading --}}
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4">
+        Master the Art of Copywriting with a pool of successful copywriters
+    </h2>
 
-            <a href="#programs"
-               class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur hover:bg-white/20 transition">
-                Explore Programs
-            </a>
+    {{-- Intro Paragraph --}}
+    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-4">
+        Welcome to <strong>"Next Level Africa Copywriting Course"</strong> led by a pool of successful copywriters.
+
+    {{-- Why Copywriting --}}
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Why Copywriting?</h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-4">
+        Because it’s more than just writing—it’s a strategic tool for success. Copywriting allows you to influence, persuade, and drive action in any business or venture.
+    </p>
+
+    {{-- Unleash Potential --}}
+    <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Unleash Potential</h3>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+        Copywriting is the art of persuading your audience through words. Learn the secrets, strategies, and techniques that have earned millions and can help you generate substantial income, no matter your experience level.
+    </p>
+
+    {{-- Join Now Button --}}
+    <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+        Join Now
+    </a>
+</section>
+
+
+{{-- =========================
+PERSONALIZED ROADMAP SECTION
+========================= --}}
+<section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-100 mb-4">Personalized Copywriting Roadmap</h2>
+        <p class="text-gray-300 mb-6">A Step-by-Step Guide to Success</p>
+        <p class="text-gray-300 mb-6">A Unlock the Power of Copywriting: Discover How to Attract High-Value Clients, Manage Copywriting Projects Efficiently, and Thrive in the Competitive World of SEO Copywriting”</p>
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Next Level Africa Club
+        </a>
+    </div>
+
+    {{-- Steps with vertical cyan line --}}
+    <div class="relative max-w-5xl mx-auto">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400"></div>
+
+        <div class="space-y-16">
+            {{-- Step 1 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">01</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Find Your Copywriting Focus</h3>
+                    <p class="text-gray-300">
+                        Embark on a comprehensive exploration into the core principles of copywriting. Gain a thorough understanding of the art and science behind crafting compelling content, discover the various writing styles, and learn why effective copy is pivotal in today’s digital marketing landscape.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 2 --}}
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">02</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Hone Your Skills</h3>
+                    <p class="text-gray-300">
+                        Copywriting is an art that requires practice and continuous learning.This includes understanding the principles of persuasive writing, mastering SEO techniques, and staying up-to-date with the latest marketing trends. Consider taking courses, reading books, or learning from successful copywriters to improve your skills.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 3 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">03</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Build a Portfolio</h3>
+                    <p class="text-gray-300">
+                        A strong portfolio is crucial to showcase your skills and attract potential clients. This could include blog posts, sales pages, email campaigns, and more. Make sure your portfolio reflects the type of work you want to be hired for and demonstrates your ability to deliver results.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 4 --}}
+            <div class="relative flex justify-end -mt-8">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">04</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Promote Your Services</h3>
+                    <p class="text-gray-300">
+                    Once you’ve honed your skills and built a portfolio, it’s time to market your services. This could include creating a professional website, leveraging social media platforms, attending networking events, or using freelance platforms. Remember to highlight your unique selling proposition and why clients should choose you over others.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Step 5 --}}
+            <div class="relative flex justify-start">
+                <div class="bg-gray-800 rounded-2xl p-6 w-80 shadow-lg border border-gray-700">
+                    <span class="text-cyan-400 font-bold text-xl">05</span>
+                    <h3 class="text-xl font-semibold text-gray-100 mt-2 mb-2">Deliver Quality Work</h3>
+                    <p class="text-gray-300">
+                        After landing a client, it’s essential to deliver high-quality work. This means meeting deadlines, communicating effectively with the client, and always striving to exceed client expectations. By delivering quality work consistently, you can build long-term relationships with clients and get repeat business.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- WHAT WE OFFER -->
-<section class="bg-white py-24">
-    <div class="container mx-auto px-6">
+{{-- =========================
+WHY CHOOSE OUR COURSE
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-12">
 
-        <div class="text-center max-w-3xl mx-auto mb-20">
-            <span class="text-indigo-600 font-semibold uppercase tracking-widest">
-                What We Offer
-            </span>
-
-            <h2 class="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900">
-                Industry-Focused AI Training & Automation
-            </h2>
-
-            <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                Our programs are designed for practical implementation — helping learners and businesses use AI tools,
-                automation systems, and intelligent workflows effectively.
+    {{-- Master Ecommerce Success --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold mb-4 text-gray-100">Step-by-Step Learning:</h2>
+            <p class="text-gray-300 text-lg">
+                Unlock the Art of Copywriting with Our Comprehensive Course <br>
+                Our course takes you on a guided journey through the intricate world of copywriting. Divided into 11 comprehensive categories, it's designed as a step-by-step guide, ensuring that you not only learn but also master the art of persuasive writing. 
+                Whether you're a complete novice or an experienced wordsmith, our course offers valuable insights and techniques that can transform your writing skills.
             </p>
         </div>
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/roadmap.png') }}" alt="Ecommerce Roadmap" class="rounded-2xl shadow-lg w-full">
+        </div>
+    </div>
 
-        <div id="programs" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+    {{-- Millionaire Professor --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/professor.png') }}" alt="Professor Andrew Bass" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Experienced Professionals:</h3>
+            <p class="text-gray-300">
+               Learn from a Copywriting Expert with Proven Success
+                Imagine having a mentor who truly understands the art and science of copywriting.
+                Gain guidance from an experienced professional who has successfully applied these skills to generate real results.
+                With deep knowledge and practical insights, this mentorship can empower you to achieve your goals and unlock the potential of persuasive writing.
+            </p>
+        </div>
+    </div>
 
-            <!-- CARD 1 -->
-            <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="absolute top-0 right-0 h-32 w-32 rounded-full bg-indigo-100 blur-3xl opacity-70"></div>
+    {{-- Daily Support & Coaching --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/coaching.png') }}" alt="Daily Support & Coaching" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Daily Support and Coaching</h3>
+            <p class="text-gray-300">
+             Stay on Course with Our Daily Support and Expert Coaching.
+                Success in copywriting demands consistent effort and motivation. That's why we provide daily support and expert coaching to keep you on track. 
+                Our dedicated team is here to answer your questions, provide feedback, and offer valuable insights. With our guidance, you'll stay motivated, refine your skills, and conquer the world of copywriting one day at a time.
+            </p>
+        </div>
+    </div>
 
-                <div class="relative">
-                    <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg">
-                        🤖
-                    </div>
+    {{-- Community --}}
+    <div class="border border-cyan-400 rounded-3xl p-12 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+            <img src="{{ asset('images/ecommerce/community.png') }}" alt="Community" class="rounded-2xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 text-left">
+            <h3 class="text-2xl font-bold text-gray-100 mb-4">Community:</h3>
+            <p class="text-gray-300">
+                Dive Deeper into Copywriting with Daily Nuggets of Wisdom.
+                In the ever-evolving world of copywriting, knowledge is power. Our course goes beyond the basics by offering daily industry insights and thought-provoking questions. 
+                These bite-sized nuggets of wisdom will expand your understanding of the copywriting field, helping you stay at the forefront of industry trends and strategies. It's the edge you need to thrive in this competitive landscape.
+            </p>
+        </div>
+    </div>
 
-                    <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                        AI Agents & Workflow Automation
-                    </h3>
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+           Join Next Level Africa Club
+        </a>
+        <p class="text-gray-400 mt-4">We've taught over 5,862+ students how to grow their income</p>
+    </div>
+</section>
 
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Learn how to build intelligent AI agents and automated systems using modern no-code and low-code tools.
-                    </p>
 
-                    <ul class="mt-6 space-y-3 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="text-indigo-600">✓</span>
-                            <span>AI Agents & Assistants</span>
-                        </li>
+{{-- =========================
+TESTIMONIALS
+========================= --}}
+<section class="max-w-6xl mx-auto py-20 px-6 space-y-10">
+    <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-12">What Our Students Say</h2>
 
-                        <li class="flex items-start gap-3">
-                            <span class="text-indigo-600">✓</span>
-                            <span>n8n Workflow Automation</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-indigo-600">✓</span>
-                            <span>Webhooks & APIs</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="absolute bottom-0 left-0 h-32 w-32 rounded-full bg-cyan-100 blur-3xl opacity-70"></div>
-
-                <div class="relative">
-                    <div class="w-16 h-16 rounded-2xl bg-cyan-600 text-white flex items-center justify-center shadow-lg">
-                        🎓
-                    </div>
-
-                    <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                        AI Certification Programs
-                    </h3>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Structured certification programs designed to equip learners with practical and employable AI skills.
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="text-cyan-600">✓</span>
-                            <span>Prompt Engineering</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-cyan-600">✓</span>
-                            <span>AI Fundamentals</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-cyan-600">✓</span>
-                            <span>Practical AI Projects</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="absolute top-0 left-0 h-32 w-32 rounded-full bg-purple-100 blur-3xl opacity-70"></div>
-
-                <div class="relative">
-                    <div class="w-16 h-16 rounded-2xl bg-purple-600 text-white flex items-center justify-center shadow-lg">
-                        ⚙️
-                    </div>
-
-                    <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                        Business AI Automation
-                    </h3>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Students learn how businesses use AI to automate operations, reduce manual work, and improve efficiency. Our graduates help organizations implement real-world AI systems like customer support and CRM automation.
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="text-purple-600">✓</span>
-                            <span>Build WhatsApp AI Automation Systems</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-purple-600">✓</span>
-                            <span>Integrate AI with CRM Platforms</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-purple-600">✓</span>
-                            <span>Design AI Customer Support Solutions</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="absolute bottom-0 right-0 h-32 w-32 rounded-full bg-pink-100 blur-3xl opacity-70"></div>
-
-                <div class="relative">
-                    <div class="w-16 h-16 rounded-2xl bg-pink-600 text-white flex items-center justify-center shadow-lg">
-                        💼
-                    </div>
-
-                    <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                        Career & Freelancing Skills
-                    </h3>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Students learn how to turn AI skills into income through freelancing, remote work, and consulting. Our graduates build portfolios and offer AI services to clients and businesses globally.
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="text-pink-600">✓</span>
-                            <span>Work on Real Client Project Workflows</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-pink-600">✓</span>
-                            <span>Build a Job-Ready AI Portfolio</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-pink-600">✓</span>
-                            <span>Package and Sell AI Services Professionally</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CARD 5 -->
-                <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    <div class="absolute top-0 right-0 h-32 w-32 rounded-full bg-emerald-100 blur-3xl opacity-70"></div>
-
-                    <div class="relative">
-                        <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shadow-lg">
-                            🌐
-                        </div>
-
-                        <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                            AI-Powered Websites
-                        </h3>
-
-                        <p class="mt-4 text-gray-600 leading-relaxed">
-                            Students learn how to build modern websites powered by AI systems, automation, and chat assistants. Our graduates create smart websites that help businesses capture leads and engage customers 24/7.
-                        </p>
-
-                        <ul class="mt-6 space-y-3 text-gray-700">
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Build Lead Capture Systems for Real Businesses</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Integrate AI Chat Assistants into Websites</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Design Automated Website Workflows</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            <!-- CARD 6 -->
-            <div class="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="absolute bottom-0 left-0 h-32 w-32 rounded-full bg-orange-100 blur-3xl opacity-70"></div>
-
-                <div class="relative">
-                    <div class="w-16 h-16 rounded-2xl bg-orange-500 text-white flex items-center justify-center shadow-lg">
-                        🚀
-                    </div>
-
-                    <h3 class="mt-8 text-2xl font-bold text-gray-900">
-                        AI Transformation Consulting
-                    </h3>
-
-                    <p class="mt-4 text-gray-600 leading-relaxed">
-                        Students learn how organizations adopt AI to improve operations and decision-making. Our graduates support businesses and institutions in planning and implementing AI transformation strategies.
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="text-orange-500">✓</span>
-                            <span>Develop AI Adoption Strategies for Organizations</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-orange-500">✓</span>
-                            <span>Optimize Business Workflows Using AI Tools</span>
-                        </li>
-
-                        <li class="flex items-start gap-3">
-                            <span class="text-orange-500">✓</span>
-                            <span>Support Institutional AI Training & Implementation</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+    <div class="grid md:grid-cols-2 gap-8">
+        {{-- Testimonial 1 --}}
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">"This copywriting course completely changed how I sell online. I finally understood how to write offers that convert"</p>
+            <h4 class="text-gray-100 font-bold">Jane K., Nairobi</h4>
+        </div>
+        {{-- Testimonial 2 --}}
+        <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <p class="text-gray-300 mb-4">"The copywriting strategies I learned gave me the clarity and confidence to launch my online store the right way. I now know how to communicate value and attract the right customers."</p>
+            <h4 class="text-gray-100 font-bold">David M., Mombasa</h4>
         </div>
     </div>
 </section>
 
-<!-- FEATURE STRIP -->
-<section class="bg-indigo-950 py-20">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+{{-- =========================
+GET ACCESS & PRICING
+========================= --}}
+<section class="max-w-7xl mx-auto py-20 px-6 text-center">
 
-            <div>
-                <h3 class="text-5xl font-extrabold text-white">19+</h3>
-                <p class="mt-3 text-indigo-200 text-lg">
-                    Practical AI Learning Modules
-                </p>
-            </div>
+    {{-- Section Heading --}}
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
+        Get access to the best education platform for only KES 1,999
+    </h2>
 
-            <div>
-                <h3 class="text-5xl font-extrabold text-white">120+</h3>
-                <p class="mt-3 text-indigo-200 text-lg">
-                    Hours of Hands-On Learning
-                </p>
-            </div>
+    {{-- Video --}}
+    <div class="mt-8 max-w-4xl mx-auto">
+        <video class="w-full rounded-2xl shadow-lg" controls poster="{{ asset('images/video-placeholder.jpg') }}">
+            <source src="{{ asset('videos/ecommerce-access.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-            <div>
-                <h3 class="text-5xl font-extrabold text-white">Real</h3>
-                <p class="mt-3 text-indigo-200 text-lg">
-                    Automation Projects & Deployments
-                </p>
-            </div>
-
+    {{-- Pricing Card --}}
+    <div class="mt-12 max-w-md mx-auto bg-gray-900 border border-cyan-400 rounded-3xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-100 mb-4">Take Action: You need to act now.</h3>
+        <div class="text-4xl font-extrabold text-cyan-400 mb-2">
+            KES 1,999 <span class="text-gray-400 text-xl line-through ml-2">KES 10,499</span>
         </div>
+        <div class="text-gray-300 mb-6">Forever</div>
+
+        <ul class="space-y-2 text-left text-gray-300 mb-6">
+            <li>✔ Simple step-by-step tutorials</li>
+            <li>✔ 15 wealth creation methods</li>
+            <li>✔ Access to millionaire mentors</li>
+            <li>✔ Community chat groups</li>
+            <li>✔ No experience needed</li>
+            <li>✔ Custom-made learning</li>
+            <li>✔ Cancel anytime</li>
+            <li>✔ Risk-free</li>
+        </ul>
+
+        <a href="{{ route('pricing') }}" class="block w-full bg-cyan-400 text-black font-bold py-4 rounded-xl hover:bg-cyan-500 transition mb-2">
+            Join Next Level Africa Club
+        </a>
+        <p class="text-xs text-gray-400 mt-2">Lock in the price before it increases. Act First.</p>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="relative overflow-hidden bg-gradient-to-r from-indigo-700 to-indigo-500 py-24 text-center">
-    <div class="absolute inset-0 opacity-20">
-        <div class="absolute left-0 top-0 h-72 w-72 rounded-full bg-white blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-200 blur-3xl"></div>
+{{-- ========================= --}}
+{{-- FREQUENTLY ASKED QUESTIONS --}}
+{{-- ========================= --}}
+<section class="w-full max-w-6xl mb-32 mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-4 max-w-4xl mx-auto" id="faqAccordion">
+
+        {{-- FAQ ITEM --}}
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Is the program open for everyone?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. This program is designed for motivated individuals who are willing
+                to learn, apply, and follow proven systems step by step.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    How quickly will I make my money back?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Results vary depending on effort, consistency, and execution.
+                Next Level Africa Club focuses on real skills, not shortcuts.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Do I need money once inside Next Level Africa Club?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No large capital is required. Many methods are beginner-friendly.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    Does my age really matter?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. Commitment and consistency matter more than age.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I know nothing about the skills you teach. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Not at all. Everything is taught from the ground up.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I live in X country. Is it a problem?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                No. Next Level Africa Club works globally.
+            </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+            <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                <span class="text-lg font-semibold text-cyan-400">
+                    I don’t have a lot of time available. Can I still apply?
+                </span>
+                <span class="faq-icon text-2xl text-white">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-gray-400">
+                Yes. Training is self-paced and flexible.
+            </div>
+        </div>
+
     </div>
 
-    <div class="relative container mx-auto px-6 max-w-4xl">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white">
-            Start Your AI Journey Today
-        </h2>
-
-        <p class="mt-6 text-lg md:text-xl text-indigo-100 leading-relaxed">
-            Whether you're a student, entrepreneur, institution, or business,
-            MooseLoon AI Academy helps you build practical AI skills for the future.
-        </p>
-
-        <div class="mt-10">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-lg font-semibold text-indigo-700 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-                Contact MooseLoon AI Academy
-            </a>
-        </div>
+    {{-- CTA Button --}}
+    <div class="text-center mt-12">
+        <a href="{{ route('pricing') }}" class="inline-block bg-cyan-400 text-black font-bold px-10 py-4 rounded-xl hover:bg-cyan-500 transition">
+            Join Now
+        </a>
     </div>
 </section>
+
+{{-- =========================
+FAQ Accordion Script
+========================= --}}
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = faqItem.querySelector('.faq-icon');
+
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Close all others (accordion behavior)
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+        // Toggle current
+        if (!isOpen) {
+            answer.classList.remove('hidden');
+            icon.textContent = '−';
+        }
+    });
+});
+</script>
 
 @endsection
