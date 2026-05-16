@@ -1,0 +1,7 @@
+*
+!private/
+!public/
+!.gitignore
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+
